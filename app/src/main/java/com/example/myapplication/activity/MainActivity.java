@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.example.myapplication.R;
 import com.example.myapplication.fragment.FenleiFragment;
 import com.example.myapplication.fragment.GouwucheFragment;
 import com.example.myapplication.fragment.ShouyeFragment;
