@@ -6,9 +6,51 @@
     tools:context=".fragment.WodeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="这是我的界面" />
+        android:id="@+id/r1"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:id="@+id/l1"
+
+
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/touxiang"
+            android:src="@drawable/touxiang"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/nicheng"
+            android:text="世界港口"
+            android:gravity=""
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:id="@+id/textwo"
+        android:layout_below="@+id/l1"
+        android:layout_marginLeft="20dp"
+        android:text="我的订单">
+
+    </TextView>
+       <ListView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/mylist"
+           ></ListView>
+    </RelativeLayout>
 
 </FrameLayout>
