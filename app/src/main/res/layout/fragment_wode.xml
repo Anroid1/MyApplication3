@@ -46,11 +46,107 @@
         android:text="我的订单">
 
     </TextView>
-       <ListView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:id="@+id/mylist"
-           ></ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/l2"
+            android:layout_below="@+id/textwo"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+
+                android:id="@+id/dingdan"
+                android:src="@drawable/dingdan"
+                />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+
+                android:id="@+id/daifu"
+                android:src="@drawable/daifu"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+
+                android:id="@+id/daishou"
+                android:src="@drawable/daishou"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CECECE"
+            android:id="@+id/v1"
+            android:layout_below="@+id/l2"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/l4"
+            android:layout_below="@+id/v1">
+            <TextView
+                android:layout_width="66dp"
+                android:layout_height="23dp"
+                android:text="个人信息"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp">
+            </TextView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CECECE"
+            android:id="@+id/v2"
+            android:layout_below="@+id/l4"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/l5"
+            android:layout_below="@+id/v2">
+            <TextView
+                android:layout_width="66dp"
+                android:layout_height="23dp"
+                android:text="我的地址"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp">
+            </TextView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CECECE"
+            android:id="@+id/v3"
+            android:layout_below="@+id/l5"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/l6"
+            android:layout_below="@+id/v3">
+            <TextView
+                android:layout_width="66dp"
+                android:layout_height="23dp"
+                android:text="修改密码"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp">
+            </TextView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CECECE"
+            android:id="@+id/v4"
+            android:layout_below="@+id/l6"
+            />
     </RelativeLayout>
 
 </FrameLayout>

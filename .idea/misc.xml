@@ -4,10 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_main.xml" value="0.175" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_daifukuan.xml" value="0.25364583333333335" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_daishouhuo.xml" value="0.25364583333333335" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_dingdan.xml" value="0.2504528985507246" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_dizhi.xml" value="0.25364583333333335" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_gerenxinxi.xml" value="0.25364583333333335" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_main.xml" value="0.12760416666666666" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_xiugaimima.xml" value="0.2390625" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_fenlei.xml" value="0.12760416666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_wode.xml" value="0.1" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/layout_wode.xml" value="0.2390625" />
         <entry key="..\:/Users/li/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1421875" />
         <entry key="..\:/Users/li/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.12604166666666666" />
         <entry key="..\:/Users/li/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_fenlei.xml" value="0.11145833333333334" />

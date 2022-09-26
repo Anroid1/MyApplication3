@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".wode.XiugaimimaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.DizhiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.GerenxinxiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.DaishouhuoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.DaifukuanActivity"
+            android:exported="false" />
+        <activity
             android:name=".wode.DingdanActivity"
             android:exported="false" />
         <activity
