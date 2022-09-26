@@ -16,8 +16,8 @@ import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
+import com.example.myapplication.activity.MainActivity;
 import com.example.myapplication.wode.DaifukuanActivity;
 import com.example.myapplication.wode.DaishouhuoActivity;
 import com.example.myapplication.wode.DingdanActivity;
