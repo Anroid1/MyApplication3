@@ -11,40 +11,37 @@
         android:layout_height="match_parent"
         android:id="@+id/r1"
         >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/l1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/touxiang"
+            android:src="@drawable/touxiang"
+            />
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
-            android:text="我的"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:gravity="center"/>
-
-        <LinearLayout
-            android:id="@+id/l1"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-
-
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/touxiang"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="50dp"
-                android:src="@drawable/touxiang" />
-
-            <TextView
-                android:id="@+id/nicheng"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="70dp"
-                android:gravity=""
-                android:text="世界港口" />
-        </LinearLayout>
+            android:layout_height="104dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/nicheng"
+            android:text="世界港口"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:id="@+id/wI1"
+            android:layout_marginLeft="180dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dayu"></ImageView>
+    </LinearLayout>
 
         <TextView
             android:id="@+id/textwo"
@@ -52,15 +49,17 @@
             android:layout_height="17dp"
             android:layout_below="@+id/l1"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#101010"
             android:text="我的订单">
 
         </TextView>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:id="@+id/l2"
             android:layout_below="@+id/textwo"
-
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="60dp"
@@ -75,8 +74,8 @@
                 android:layout_height="60dp"
 
 
-                android:id="@+id/daifu"
-                android:src="@drawable/daifu"
+                android:id="@+id/daifu1"
+                android:src="@drawable/daifu1"
                 android:layout_weight="1"
                 />
             <ImageView
@@ -88,27 +87,64 @@
                 android:src="@drawable/daishou"
                 />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l3"
+            android:layout_below="@+id/l2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#101010"
+                android:text="全部订单"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#101010"
+                android:text="待付款  "></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#101010"
+                android:text="待收货   "></TextView>
+
+        </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:background="#CECECE"
+            android:layout_marginTop="15dp"
             android:id="@+id/v1"
-            android:layout_below="@+id/l2"
+            android:layout_below="@+id/l3"
             />
-
         <LinearLayout
-            android:id="@+id/l4"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/v1">
-
+            android:layout_height="44dp"
+            android:id="@+id/l4"
+            android:layout_below="@+id/v1"
+            android:orientation="horizontal">
             <TextView
-                android:layout_width="66dp"
-                android:layout_height="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="个人信息"
+                android:textColor="#101010"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp"
-                android:text="个人信息"></TextView>
+                android:gravity="center">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/wI2"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="240dp"
+                android:src="@drawable/dayu"></ImageView>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
@@ -117,18 +153,31 @@
             android:id="@+id/v2"
             android:layout_below="@+id/l4"
             />
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
             android:id="@+id/l5"
-            android:layout_below="@+id/v2">
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/v2"
+            android:orientation="horizontal">
+
             <TextView
-                android:layout_width="66dp"
-                android:layout_height="23dp"
-                android:text="我的地址"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp">
+                android:gravity="center"
+                android:textColor="#101010"
+                android:text="我的地址">
             </TextView>
+            <ImageView
+                android:id="@+id/wI3"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="240dp"
+                android:src="@drawable/dayu">
+
+            </ImageView>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
@@ -139,16 +188,27 @@
             />
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="44dp"
             android:id="@+id/l6"
+            android:orientation="horizontal"
             android:layout_below="@+id/v3">
             <TextView
-                android:layout_width="66dp"
-                android:layout_height="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
                 android:text="修改密码"
+                android:textColor="#101010"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp">
+                android:gravity="center">
             </TextView>
+            <ImageView
+                android:id="@+id/wI4"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="240dp"
+                android:src="@drawable/dayu">
+
+            </ImageView>
         </LinearLayout>
         <View
             android:layout_width="match_parent"

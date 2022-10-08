@@ -4,37 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".wode.XiugaimimaActivity">
+    tools:context=".wode.AdddizhiActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/xdl1"
+        android:id="@+id/adl1"
         android:orientation="horizontal">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="15dp"
-            android:id="@+id/xdI1"
+            android:id="@+id/adI1"
             android:src="@drawable/dayu"
             ></ImageView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/xdt1"
+            android:id="@+id/adt1"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="修改地址"></TextView>
+            android:text="新增地址"></TextView>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:id="@+id/xdl2"
-        android:layout_below="@id/xdl1"
+        android:id="@+id/adl2"
+        android:layout_below="@id/adl1"
         android:layout_marginTop="30dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:id="@+id/xdt2"
+            android:id="@+id/adt2"
             android:gravity="center"
             android:layout_marginLeft="20dp"
             android:text="姓名">
@@ -42,7 +42,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@+id/xdt3"
+            android:id="@+id/adt3"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
@@ -55,20 +55,20 @@
         android:background="#CECECE"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:id="@+id/xdv1"
+        android:id="@+id/adv1"
 
-        android:layout_below="@+id/xdl2"
+        android:layout_below="@+id/adl2"
         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:id="@+id/xdl3"
-        android:layout_below="@id/xdv1"
+        android:id="@+id/adl3"
+        android:layout_below="@id/adv1"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:id="@+id/xdt4"
+            android:id="@+id/adt4"
             android:gravity="center"
             android:layout_marginLeft="20dp"
             android:text="手机号码">
@@ -76,7 +76,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@+id/xdt5"
+            android:id="@+id/adt5"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
@@ -89,19 +89,19 @@
         android:background="#CECECE"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:id="@+id/xdv2"
-        android:layout_below="@+id/xdl3"
+        android:id="@+id/adv2"
+        android:layout_below="@+id/adl3"
         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:id="@+id/xdl4"
-        android:layout_below="@id/xdv2"
+        android:id="@+id/adl4"
+        android:layout_below="@id/adv2"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:id="@+id/xdt6"
+            android:id="@+id/adt6"
             android:gravity="center"
             android:layout_marginLeft="20dp"
             android:text="地区">
@@ -109,7 +109,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@+id/xdt7"
+            android:id="@+id/adt7"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
@@ -122,19 +122,19 @@
         android:background="#CECECE"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:id="@+id/xdv3"
-        android:layout_below="@+id/xdl4"
+        android:id="@+id/adv3"
+        android:layout_below="@+id/adl4"
         />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:id="@+id/xdl5"
-        android:layout_below="@id/xdv3"
+        android:id="@+id/adl5"
+        android:layout_below="@id/adv3"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:id="@+id/xdt8"
+            android:id="@+id/adt8"
             android:gravity="center"
             android:layout_marginLeft="20dp"
             android:text="详细地址">
@@ -142,7 +142,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@+id/xdt9"
+            android:id="@+id/adt9"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
@@ -152,8 +152,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/xdl5"
+        android:layout_below="@+id/adl5"
         android:background="#F0F0F0"
         android:orientation="vertical"></LinearLayout>
+
+
+
 
 </RelativeLayout>

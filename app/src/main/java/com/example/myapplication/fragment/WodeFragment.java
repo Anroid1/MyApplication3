@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -44,7 +45,7 @@ public class WodeFragment extends Fragment {
         ImageView myTitle =view.findViewById(R.id.touxiang);
         TextView textView=view.findViewById(R.id.nicheng);
         ImageView imageView1=view.findViewById(R.id.dingdan);
-        ImageView imageView2=view.findViewById(R.id.daifu);
+        ImageView imageView2=view.findViewById(R.id.daifu1);
         ImageView imageView3=view.findViewById(R.id.daishou);
         LinearLayout li4=view.findViewById(R.id.l4);
         LinearLayout li5=view.findViewById(R.id.l5);
