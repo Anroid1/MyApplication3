@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class QishiyeActivity extends AppCompatActivity {
+import com.example.myapplication.R;
+
+public class ZhuceActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qishiye);
+        setContentView(R.layout.activity_zhuce);
     }
 }

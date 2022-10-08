@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WeixinshouquanyeActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/tu"
+        android:layout_width="match_parent"
+        android:layout_height="356dp"
+        android:src="@drawable/wxsqt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tu1"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@+id/weixindenglu"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/yuanxing"></ImageView>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tu1"
+            android:text="季果蔬APP"
+            android:textSize="18dp"></TextView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="获取您的手机号"
+        android:textSize="14dp"></TextView>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="向您配送商品时及时向您取得联系"
+        android:textSize="10dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="152*****4839"
+            android:layout_marginTop="5dp"
+            android:textSize="11dp"></TextView>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="微信绑定号码"
+            android:textSize="11dp"></TextView>
+
+        <ImageView
+            android:id="@+id/tu2"
+            android:layout_width="24dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tu1"
+            android:src="@drawable/gou"></ImageView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="159*****8632"
+        android:layout_marginTop="5dp"
+        android:textSize="11dp"></TextView>
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="管理手机号码"
+        android:layout_marginTop="8dp"
+        android:textSize="12dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tu3"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_below="@+id/text2"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/jujue"></ImageView>
+
+        <ImageView
+            android:id="@+id/tu4"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tu3"
+            android:src="@drawable/yunxu"></ImageView>
+
+    </LinearLayout>
+</LinearLayout>
