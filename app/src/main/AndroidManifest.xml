@@ -10,21 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".WeixinshouquanyeActivity"
-            android:exported="false" />
+            android:name=".activity.SplashActivity"
+            android:exported="true" />
         <activity
-            android:name=".WeixindengluActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ZhuceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.login.ZhuceActivity"
-            android:exported="false"
-            android:label="@string/title_activity_zhuce" />
-        <activity
-            android:name=".DengluActivity"
-            android:exported="false" />
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
