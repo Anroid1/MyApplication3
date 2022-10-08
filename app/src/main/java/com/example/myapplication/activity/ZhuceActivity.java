@@ -1,5 +1,6 @@
 package com.example.myapplication.activity;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -25,36 +26,49 @@ public class ZhuceActivity extends AppCompatActivity {
         editText3 =findViewById(R.id.shuruyanzhengma);
         imgzhuce =findViewById(R.id.bu_zhuce);
 
+        imgzhuce.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                //获取文本框中的数据
+                String s = editText1.getText().toString();
+                //弹出一个消息框
+                Toast.makeText(getApplicationContext(), s + "请微信授权", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         imgzhuce.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String phone=editText1.getText().toString();
-                String p =  editText2.getText().toString();
-                String y =  editText3.getText().toString();
-
+                int len = editText1.length();
                 if(editText1.length() == 0){
-                    Toast.makeText(ZhuceActivity.this,"账号不能为空",Toast.LENGTH_SHORT).show();
-                }
-                else if(4 >=editText1.length()){
-                    Toast.makeText(ZhuceActivity.this,"账号长度应在4-18字之间",Toast.LENGTH_SHORT).show();
-                }
-                //这里比较两个密码是否相同，不能用== 或者!=来判断string，string是引用类型的
-                //不是基本数据类型，所以它们比较使用地址和值（相当于C的指针）
-                //来比较的，所以 str == str2永远是false，那么就应该将Text取出比较
-                //getText得到内容
-                //toString以str形式
-                //trim可以删去前后的空格
-                //如果两部分相等则等于1，注册成功，关掉页面回到登陆页面
+                    Toast.makeText(getApplicationContext(), "手机号为空", Toast.LENGTH_SHORT).show();
 
-                Intent intent=new Intent();
-                intent.putExtra("phone",phone);
-                intent.putExtra("p",p);
-                intent.putExtra("y",y);
-                ZhuceActivity.this.setResult(3,intent);
-                ZhuceActivity.this.finish();
+                }
+                int len1 = editText2.length();
+                if(editText2.length() == 0){
+                    Toast.makeText(getApplicationContext(), "密码为空", Toast.LENGTH_SHORT).show();
+                }
+                Intent intent1 = new Intent(ZhuceActivity.this, WeixindengluActivity.class);
+                startActivityForResult(intent1, 1);
             }
         });
+    }
+
+    @Override
+    public void onActivityResult ( int requestCode, int resultCode,@Nullable Intent data){
+        super.onActivityResult(requestCode,resultCode, data);
+        if(requestCode==1&&resultCode==3) {
+            String s = data.getStringExtra("phone");
+            String s1 = data.getStringExtra("password");
+            editText1.setText(s);
+            editText2.setText(s1);
+        }
+
+
+
+
 
 
 
