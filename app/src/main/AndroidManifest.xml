@@ -28,6 +28,9 @@
             android:name=".wode.DaifukuanActivity"
             android:exported="false" />
         <activity
+            android:name=".wode.DingdanActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.WeixinshouquanyeActivity"
             android:exported="false" />
         <activity
