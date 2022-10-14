@@ -10,31 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".activity.SplashActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".activity.WeixinshouquanyeActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activity.WeixindengluActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activity.ZhuceActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".activity.DengluActivity"
-            android:exported="true" />
+<<<<<<<<< Temporary merge branch 1
+            android:name=".QishiyeActivity"
+            android:exported="false" />
         <activity
             android:name=".activity.MainActivity"
-            android:exported="true"/>
+=========
+            android:name=".activity.SplashActivity"
+>>>>>>>>> Temporary merge branch 2
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
