@@ -10,17 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".activity.SplashActivity"
-            android:exported="true" />
+            android:name=".activity.WeixinshouquanyeActivity"
+            android:exported="false" />
         <activity
-            android:name=".activity.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".activity.WeixindengluActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ZhuceActivity"
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity
+            android:name=".activity.DengluActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

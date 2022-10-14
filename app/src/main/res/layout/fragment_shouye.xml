@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.ShouyeFragment">
+    tools:context=".fragment.ShouyeFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="这是首页界面" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="季果蔬"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/sousuotext"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/translucent"
+            android:gravity="center"
+            android:hint="请输入内容查找" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lunfantu"
+        android:layout_width="410dp"
+        android:layout_height="175dp"
+        android:src="@drawable/xiyou"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+
+        <GridView
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:verticalSpacing="20dp"></GridView>
+
+    </RelativeLayout>
+
+</LinearLayout>
