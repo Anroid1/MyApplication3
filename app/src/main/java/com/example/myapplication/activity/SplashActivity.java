@@ -27,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
                 try {
                     sleep(3000);
                     //跳转到主页
-                    Intent intent=new Intent(SplashActivity.this,MainActivity.class);
+                    Intent intent=new Intent(SplashActivity.this,DengluActivity.class);
                     startActivity(intent);
                     //关闭当前活动
                     finish();

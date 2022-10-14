@@ -9,10 +9,14 @@
     <!-- TODO: Update blank fragment layout -->
     <include layout="@layout/title_bar" />
 
-    <TextView
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="这是购物车界面" />
+        android:id="@+id/list1"
+        android:divider="@color/grey"
+        android:layout_marginTop="2mm"
+        android:layout_marginLeft="1mm"
+        android:layout_marginRight="1mm"
+        android:dividerHeight="2mm" />
 
 </LinearLayout>

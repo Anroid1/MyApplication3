@@ -28,7 +28,17 @@
             android:name=".wode.DaifukuanActivity"
             android:exported="false" />
         <activity
-            android:name=".wode.DingdanActivity"
+            android:name=".activity.WeixinshouquanyeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WeixindengluActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.DengluActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ZhuceActivity"
             android:exported="false" />
         <activity
             android:name=".activity.SplashActivity"
