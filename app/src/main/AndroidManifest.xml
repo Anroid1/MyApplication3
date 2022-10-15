@@ -11,17 +11,47 @@
         android:theme="@style/Theme.MyApplication">
         <activity
 <<<<<<<<< Temporary merge branch 1
-            android:name=".QishiyeActivity"
+            android:name=".WeixinshouquanyeActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".WeixindengluActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ZhuceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.ZhuceActivity"
+            android:exported="false"
+            android:label="@string/title_activity_zhuce" />
+        <activity
+            android:name=".DengluActivity"
+            android:exported="false" />
 =========
+            android:name=".wode.AdddizhiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.XiugaimimaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.DizhiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.GerenxinxiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.DaishouhuoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.DaifukuanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.DingdanActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SplashActivity"
->>>>>>>>> Temporary merge branch 2
             android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
-
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
@@ -29,6 +59,7 @@
             android:name=".activity.MainActivity"
             android:exported="true">
         </activity>
+>>>>>>>>> Temporary merge branch 2
     </application>
 
 </manifest>

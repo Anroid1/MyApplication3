@@ -1,14 +1,24 @@
-package com.example.myapplication.activity;
+package com.example.myapplication.wode;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class QishiyeActivity extends AppCompatActivity {
+import com.example.myapplication.R;
+
+<<<<<<<<<< Temporary merge branch 1:app/src/main/java/com/example/myapplication/activity/ZhuceActivity.java
+public class ZhuceActivity extends AppCompatActivity {
+==========
+public class DingdanActivity extends AppCompatActivity {
+>>>>>>>>>> Temporary merge branch 2:app/src/main/java/com/example/myapplication/wode/DingdanActivity.java
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qishiye);
+<<<<<<<<<< Temporary merge branch 1:app/src/main/java/com/example/myapplication/activity/ZhuceActivity.java
+        setContentView(R.layout.activity_zhuce);
+==========
+        setContentView(R.layout.activity_dingdan);
+>>>>>>>>>> Temporary merge branch 2:app/src/main/java/com/example/myapplication/wode/DingdanActivity.java
     }
 }
