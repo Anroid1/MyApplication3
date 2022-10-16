@@ -34,9 +34,8 @@ public class GouwucheFragment extends Fragment {
         ListView myList=view.findViewById(R.id.list1);
         //设置ListView
         int [] imgs={R.drawable.caomei,R.drawable.chengzi,R.drawable.shucai};
-        String [] names={"丹东99草莓新鲜水果个大且甜现摘\n" +
-                "现在现发货应季水果包邮送到家 ...","爱媛38号果冻橙新鲜橙子当季水果\n" +
-                "水果柑橘蜜桔子整箱大果橙包邮 ... ","当季蔬菜套餐包括西兰花生菜包菜\n" +
+        String [] names={"丹东99草莓新鲜水果个大且甜现摘现在现发货应季水果包邮送到家 ...",
+                "爱媛38号果冻橙新鲜橙子当季水果水果柑橘蜜桔子整箱大果橙包邮 ... ","当季蔬菜套餐包括西兰花生菜包菜" +
                 "大西芹青瓜小南瓜等新鲜的蔬菜 ..."};
         String [] descs={"中大果，5斤","65mm-70mm,2斤","新鲜蔬菜，10斤"};
         String [] prices={"￥19.80","￥10.80","￥26.00"};
