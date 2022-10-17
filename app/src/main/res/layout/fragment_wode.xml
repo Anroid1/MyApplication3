@@ -48,7 +48,7 @@
             android:id="@+id/wI1"
             android:layout_marginLeft="180dp"
             android:layout_gravity="center"
-            android:src="@drawable/dayu"></ImageView>
+            android:src="@drawable/button1"></ImageView>
     </LinearLayout>
 
         <TextView
@@ -152,7 +152,7 @@
                 android:layout_height="12dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="240dp"
-                android:src="@drawable/dayu"></ImageView>
+                android:src="@drawable/button1"></ImageView>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
@@ -183,7 +183,7 @@
                 android:layout_height="12dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="240dp"
-                android:src="@drawable/dayu">
+                android:src="@drawable/button1">
 
             </ImageView>
         </LinearLayout>
@@ -214,7 +214,7 @@
                 android:layout_height="12dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="240dp"
-                android:src="@drawable/dayu">
+                android:src="@drawable/button1">
 
             </ImageView>
         </LinearLayout>

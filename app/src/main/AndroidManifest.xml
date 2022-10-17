@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".activity.ShangpinActivity"
+            android:exported="false" />
+        <activity
             android:name=".wode.AdddizhiActivity"
             android:exported="false" />
         <activity
@@ -36,7 +39,6 @@
         <activity
             android:name=".activity.WeixindengluActivity"
             android:exported="false" />
-
         <activity
             android:name=".activity.DengluActivity"
             android:exported="false" />
@@ -46,15 +48,15 @@
         <activity
             android:name=".activity.SplashActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activity.MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

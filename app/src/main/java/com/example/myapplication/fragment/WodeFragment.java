@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.activity.MainActivity;
+import com.example.myapplication.activity.ShangpinActivity;
 import com.example.myapplication.wode.DaifukuanActivity;
 import com.example.myapplication.wode.DaishouhuoActivity;
 import com.example.myapplication.wode.DingdanActivity;
@@ -96,7 +97,7 @@ public class WodeFragment extends Fragment {
         li6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent6=new Intent(getActivity(), XiugaimimaActivity.class);
+                Intent intent6=new Intent(getActivity(), ShangpinActivity.class);
                 startActivity(intent6);
             }
         });
