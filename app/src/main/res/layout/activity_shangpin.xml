@@ -16,7 +16,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:id="@+id/spt2"
+            android:id="@+id/tv_addcart"
             android:layout_weight="1"
             android:text="加入购物车"
             android:textColor="@color/white"
@@ -27,7 +27,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:id="@+id/spt3"
+            android:id="@+id/tv_buy"
             android:layout_weight="1"
             android:text="立即购买"
             android:textColor="@color/white"
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/spl1"
-        android:id="@+id/spS1"
+        android:id="@+id/ll_info"
         android:layout_alignParentTop="true">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -130,12 +130,14 @@
                 android:layout_marginTop="10dp"
                 android:textSize="18dp"
                 android:layout_below="@+id/spt6"></TextView>
+
             <ImageView
+                android:id="@+id/spI1"
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
-                android:background="@color/white"
-                android:id="@+id/spI1"
                 android:layout_below="@+id/spt8"
+                android:background="@color/white"
+                android:layout_centerHorizontal="true"
                 android:src="@drawable/lizi"></ImageView>
 
         </RelativeLayout>
