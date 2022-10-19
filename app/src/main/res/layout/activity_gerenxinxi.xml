@@ -11,8 +11,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/gl0"
         android:orientation="horizontal">
-
-
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:id="@+id/adI1"
+            android:src="@drawable/button2"
+            ></ImageView>
         <TextView
             android:id="@+id/gt1"
             android:layout_width="match_parent"
@@ -49,7 +53,7 @@
             android:layout_height="12dp"
             android:id="@+id/gI2"
             android:layout_gravity="center"
-            android:src="@drawable/dayu"></ImageView>
+            android:src="@drawable/button1"></ImageView>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

@@ -8,28 +8,18 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.RelativeLayout;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.activity.MainActivity;
+import com.example.myapplication.activity.ShangpinActivity;
 import com.example.myapplication.wode.DaifukuanActivity;
 import com.example.myapplication.wode.DaishouhuoActivity;
 import com.example.myapplication.wode.DingdanActivity;
 import com.example.myapplication.wode.DizhiActivity;
 import com.example.myapplication.wode.GerenxinxiActivity;
-import com.example.myapplication.wode.XiugaimimaActivity;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * 我的
@@ -96,7 +86,7 @@ public class WodeFragment extends Fragment {
         li6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent6=new Intent(getActivity(), XiugaimimaActivity.class);
+                Intent intent6=new Intent(getActivity(), ShangpinActivity.class);
                 startActivity(intent6);
             }
         });

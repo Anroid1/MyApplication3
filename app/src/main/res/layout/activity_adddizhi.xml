@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="15dp"
             android:id="@+id/adI1"
-            android:src="@drawable/dayu"
+            android:src="@drawable/button2"
             ></ImageView>
         <TextView
             android:layout_width="match_parent"
@@ -39,14 +39,14 @@
             android:layout_marginLeft="20dp"
             android:text="姓名">
         </TextView>
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/adt3"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
-        </TextView>
+        </EditText>
 
     </LinearLayout>
     <View
@@ -73,14 +73,14 @@
             android:layout_marginLeft="20dp"
             android:text="手机号码">
         </TextView>
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/adt5"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
-        </TextView>
+        </EditText>
 
     </LinearLayout>
     <View
@@ -106,14 +106,14 @@
             android:layout_marginLeft="20dp"
             android:text="地区">
         </TextView>
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/adt7"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
-        </TextView>
+        </EditText>
 
     </LinearLayout>
     <View
@@ -139,14 +139,14 @@
             android:layout_marginLeft="20dp"
             android:text="详细地址">
         </TextView>
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/adt9"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
-        </TextView>
+        </EditText>
 
     </LinearLayout>
     <LinearLayout
@@ -155,8 +155,24 @@
         android:layout_below="@+id/adl5"
         android:background="#F0F0F0"
         android:orientation="vertical"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spl1"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
 
-
-
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/addb"
+            android:layout_weight="1"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:background="@drawable/new_button2">
+        </Button>
+    </LinearLayout>
 </RelativeLayout>

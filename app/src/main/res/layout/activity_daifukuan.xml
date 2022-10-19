@@ -11,6 +11,11 @@
         android:orientation="horizontal"
         android:id="@+id/dl0"
         >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:id="@+id/dfI"
+            android:src="@drawable/button2"></ImageView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
