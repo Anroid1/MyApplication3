@@ -21,7 +21,6 @@ import com.example.myapplication.R;
 import com.example.myapplication.activity.MainActivity;
 import com.example.myapplication.wode.DaifukuanActivity;
 import com.example.myapplication.wode.DaishouhuoActivity;
-import com.example.myapplication.wode.DingdanActivity;
 import com.example.myapplication.wode.DizhiActivity;
 import com.example.myapplication.wode.GerenxinxiActivity;
 import com.example.myapplication.wode.XiugaimimaActivity;
@@ -58,13 +57,7 @@ public class WodeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        imageView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1=new Intent(getActivity(), DingdanActivity.class);
-                startActivity(intent1);
-            }
-        });
+
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

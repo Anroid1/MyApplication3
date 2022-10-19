@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.myapplication.R;
+import com.example.myapplication.fragment.ShouyeFragment;
 
 public class WeixinshouquanyeActivity extends AppCompatActivity {
     ImageView imgweixinshouquanye;
@@ -23,7 +24,7 @@ public class WeixinshouquanyeActivity extends AppCompatActivity {
         imgweixinshouquanye.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1=new Intent(WeixinshouquanyeActivity.this,MainActivity.class);
+                Intent intent1=new Intent(WeixinshouquanyeActivity.this, ShouyeFragment.class);
                 startActivityForResult(intent1,1);
             }
         });

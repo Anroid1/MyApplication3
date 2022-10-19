@@ -28,7 +28,7 @@ public class  ShouyeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_shouye, container, false);
 //定义数据
-        int imgs[] = {R.drawable.a, R.drawable.lizi};
+        int imgs[] = {R.drawable.qingcai1, R.drawable.lizi};
         //封装数据
         List<Map<String, Object>> items = new ArrayList<Map<String, Object>>();
         for (int i = 0; i < imgs.length; i++) {
@@ -37,7 +37,8 @@ public class  ShouyeFragment extends Fragment {
             items.add(data);
         }
         //定义适配器
-        SimpleAdapter simpleAdapter = new SimpleAdapter(getActivity(), items, R.layout.shouyeshangpin_item, new String[]{"img"}, new int[]{R.id.iv_img});
+        SimpleAdapter simpleAdapter = new SimpleAdapter(getActivity(), items, R.layout.shouyeshangpin_item,
+                new String[]{"img"}, new int[]{R.id.iv_img});
         GridView gridView = view.findViewById(R.id.gv);
         gridView.setAdapter(simpleAdapter);
 
