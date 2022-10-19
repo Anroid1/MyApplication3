@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //将ShouyeFragment添加到当前页面
         //实例化碎片管理器
         fragmentManager=getSupportFragmentManager();
-        //开启事务
+        //开启事务 注意：每一个FragmentTransaction只能够commit（）一次。每次点击事件都能重新获取FragmentTransaction
         fragmentTransaction=fragmentManager.beginTransaction();
         //实例化碎片
         ShouyeFragment shouyeFragment=new ShouyeFragment();

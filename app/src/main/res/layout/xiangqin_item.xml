@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".gouwuche.ShangpingjmActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/spl1"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/spt2"
+        android:layout_weight="1"
+        android:text="加入购物车"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:background="@drawable/jiagou">
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/spt3"
+        android:layout_weight="1"
+        android:text="立即购买"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:background="@drawable/ligou">
+    </Button>
+</LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/spl1"
+    android:id="@+id/spS1"
+    android:layout_alignParentTop="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spl2"
+            android:orientation="horizontal">
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+
+
+                app:strokeWidth="1dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/splizi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spl2"
+            android:layout_marginLeft="10dp"
+            android:text="成农院2022年精选清甜可口梨子500g"
+            android:textColor="#101010"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:id="@+id/spgx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/splizi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="清肺润心/家中必备"
+            android:textSize="18dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spt4"
+            android:text="￥3.5"
+            android:textSize="18dp"
+            android:textColor="#FF1C07"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/spgx"></TextView>
+
+        <TextView
+            android:id="@+id/spt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spgx"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/spt4"
+            android:text="/500g"
+            android:textColor="#101010"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/spt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spt4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="服务"
+            android:textColor="#101010"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:id="@+id/spt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spt4"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/spt6"
+            android:text="48小时发货"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:id="@+id/spt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spt6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="商品详情"
+            android:textColor="#101010"
+            android:textSize="18dp"></TextView>
+
+        <ImageView
+            android:id="@+id/spI1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spt8"
+            android:src="@drawable/duanxuanb"></ImageView>
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
