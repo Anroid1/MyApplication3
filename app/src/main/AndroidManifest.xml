@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".activity.ShangpinActivity"
-            android:exported="false" />
-        <activity
             android:name=".wode.AdddizhiActivity"
             android:exported="false" />
         <activity
@@ -44,6 +41,9 @@
             android:exported="false" />
         <activity
             android:name=".activity.ZhuceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ShangpinActivity"
             android:exported="false" />
         <activity
             android:name=".activity.SplashActivity"

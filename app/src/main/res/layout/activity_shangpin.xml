@@ -51,7 +51,12 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/spl2"
                 android:orientation="horizontal">
-                <com.synnapps.carouselview.CarouselView
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:id="@+id/iv_info"
+                    android:src="@drawable/lizi"></ImageView>
+                <!--<com.synnapps.carouselview.CarouselView
                     android:id="@+id/carouselView"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
@@ -60,12 +65,12 @@
                     app:radius="6dp"
                     app:slideInterval="3000"
                     app:strokeColor="#FF777777"
-                    app:strokeWidth="1dp"/>
+                    app:strokeWidth="1dp"/>-->
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/splizi"
+                android:id="@+id/tv_info"
                 android:text="成农院2022年精选清甜可口梨子500g"
                 android:layout_marginLeft="10dp"
                 android:textSize="18dp"
@@ -74,22 +79,41 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spgx"
+                android:id="@+id/tv_desc"
                 android:text="清肺润心/家中必备"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:textSize="18dp"
-                android:layout_below="@+id/splizi"></TextView>
+                android:layout_below="@+id/tv_info"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/spt4"
+                android:id="@+id/tv_price"
                 android:text="￥3.5"
                 android:textSize="18dp"
                 android:textColor="#FF1C07"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_below="@+id/spgx"></TextView>
+                android:layout_below="@+id/tv_desc"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_num"
+                android:text="销量："
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_price"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_number"
+                android:text="1000"
+                android:textSize="18dp"
+                android:layout_toRightOf="@+id/tv_num"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_price"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,9 +121,9 @@
                 android:text="/500g"
                 android:textSize="16dp"
                 android:textColor="#101010"
-                android:layout_below="@+id/spgx"
+                android:layout_below="@+id/tv_desc"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@+id/spt4"></TextView>
+                android:layout_toRightOf="@+id/tv_price"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -109,14 +133,14 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:textSize="18dp"
-                android:layout_below="@+id/spt4"></TextView>
+                android:layout_below="@+id/tv_num"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/spt7"
                 android:text="48小时发货"
                 android:textSize="18dp"
-                android:layout_below="@+id/spt4"
+                android:layout_below="@+id/tv_num"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="100dp"
                 android:layout_toRightOf="@+id/spt6"></TextView>
@@ -138,6 +162,15 @@
                 android:layout_below="@+id/spt8"
                 android:background="@color/white"
                 android:layout_centerHorizontal="true"
+                android:src="@drawable/lizi"></ImageView>
+
+            <ImageView
+                android:id="@+id/spI2"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_below="@+id/spI1"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
                 android:src="@drawable/lizi"></ImageView>
 
         </RelativeLayout>
