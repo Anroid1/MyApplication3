@@ -2,12 +2,46 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <ImageView
-        android:id="@+id/iv_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/iv_goods"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lizi"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_goods"
+        android:text="梨子"
+        android:layout_below="@+id/iv_goods"
+        android:textSize="20dp"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_info"
+        android:layout_below="@+id/tv_goods"
+        android:layout_alignLeft="@+id/tv_goods"
+        android:text="js"></TextView>
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/lizi" />
+        android:id="@+id/tv_price"
+        android:text="￥5.5"
+        android:layout_below="@+id/tv_info"
+        android:layout_alignLeft="@+id/tv_info"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_num"
+        android:layout_below="@+id/tv_info"
+        android:layout_alignRight="@+id/iv_goods"
+        android:text="1000"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_info"
+        android:layout_toLeftOf="@+id/tv_num"
+        android:text="销量"></TextView>
 
 </RelativeLayout>
