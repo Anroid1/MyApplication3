@@ -44,6 +44,9 @@
             android:name=".activity.DengluActivity"
             android:exported="false" />
         <activity
+            android:name=".activity.ShangpinActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ZhuceActivity"
             android:exported="false" />
         <activity

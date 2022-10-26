@@ -6,9 +6,11 @@ import java.io.Serializable;
 public class Goods implements Serializable {
     private  int id;
     private String name;
+    private String guige;
     private float price;
     private int num;
     private int img;
+
 
     public int getId() {
         return id;
@@ -24,6 +26,13 @@ public class Goods implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+    public String getGuige() {
+        return guige;
+    }
+
+    public void setGuige(String guige) {
+        this.guige = guige;
     }
 
     public float getPrice() {

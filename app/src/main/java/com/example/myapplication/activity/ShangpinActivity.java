@@ -16,15 +16,16 @@ import com.example.myapplication.util.CartDBService;
 public class ShangpinActivity extends AppCompatActivity {
     int imgs[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.xiyou,R.drawable.shouye3,
             R.drawable.fanqie,R.drawable.caomei};
-    String goods[]={"梨子","桔子","西柚","豌豆荚","番茄","草莓"};
+    String goods[]={"丹东99草莓新鲜水果个大且甜现摘现在现发货应季水果包邮送到家 ...","爱媛38号果冻橙新鲜橙子当季水果水果柑橘蜜桔子整箱大果橙包邮 ... ",
+            "当季蔬菜套餐包括西兰花生菜包菜大西芹青瓜小南瓜等新鲜的蔬菜 ...","豌豆荚","番茄","丹东99草莓新鲜水果个大且甜现摘现在现发货应季水果包邮送到家 ..."};
 
     String info[]={"清肺润心/家中必备","清肺润心/家中必备","清肺润心/家中必备","清肺润心/家中必备"
             ,"清肺润心/家中必备","清肺润心/家中必备"};
-    String price[]={"￥3","￥5","￥4","￥4.5","￥2","￥3","￥5","￥5"};
-    String shuliang[]={"销量","销量","销量","销量","销量","销量"};
-    int num[]={1000,1050,3000,2450,500,2000};
-    String fuwu[]={"服务","服务","服务","服务","服务","服务"};
-    String shijian[]={"48小时发货","48小时发货","48小时发货","48小时发货","48小时发货","48小时发货"};
+    String price[]={"￥13.20","￥5.00","￥4.00","￥4.50","￥2.00","￥3.30","￥5.20","￥5.00"};
+    String shuliang[]={"数量","数量","数量","数量","数量","数量"};
+    int num[]={1,1,1,1,1,1};
+    String fuwu[]={"规格","规格","规格","规格","规格","规格"};
+    String shijian[]={"中大果","60mm-70mm","新鲜蔬菜","中大果","中大果","中大果"};
     String xiangqing[]={"商品详情","商品详情","商品详情","商品详情","商品详情","商品详情"};
     int imgs1[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.xiyou,R.drawable.shouye3,R.drawable.fanqie,R.drawable.caomei};
     int imgs2[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.xiyou,R.drawable.shouye3,R.drawable.fanqie,R.drawable.caomei};
@@ -68,6 +69,7 @@ public class ShangpinActivity extends AppCompatActivity {
                 //获取页面的数据
                 Goods good1=new Goods();
                 good1.setName(goods[i]);
+                good1.setGuige(shijian[i]);
                 String s=price[i].substring(1);
                 good1.setPrice((Float.parseFloat(s)));
                 good1.setNum(1);
