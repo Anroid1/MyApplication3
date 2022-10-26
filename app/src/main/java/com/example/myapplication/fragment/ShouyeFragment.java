@@ -34,16 +34,10 @@ public class ShouyeFragment extends Fragment {
         //定义数据
         int imgs[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.xiyou,R.drawable.shouye3,R.drawable.fanqie,R.drawable.caomei};
         String goods[]={"梨子","桔子","西柚","豌豆荚","番茄","草莓"};
-
+        int num[]={1000,1050,3000,2450,500,2000};
         String info[]={"清肺润心/家中必备","清肺润心/家中必备","清肺润心/家中必备","清肺润心/家中必备"
                 ,"清肺润心/家中必备","清肺润心/家中必备"};
-        String price[]={"￥3","￥5","￥4","￥4.5","￥2","￥3","￥5","￥5"};
-        int num[]={1000,1050,3000,2450,500,2000};
-        String fuwu[]={"服务","服务","服务","服务","服务","服务"};
-        String shijian[]={"48小时发货","48小时发货","48小时发货","48小时发货","48小时发货","48小时发货"};
-        String xiangqing[]={"商品详情","商品详情","商品详情","商品详情","商品详情","商品详情"};
-        int imgs1[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.xiyou,R.drawable.shouye3,R.drawable.fanqie,R.drawable.caomei};
-        int imgs2[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.xiyou,R.drawable.shouye3,R.drawable.fanqie,R.drawable.caomei};
+        String price[]={"￥13.20","￥5.00","￥4.00","￥4.50","￥2.00","￥3.30","￥5.20","￥5.00"};
         List<Map<String,Object>> items2=new ArrayList<Map<String,Object>>();
         for (int i=0;i<goods.length;i++){
             Map<String,Object> data2=new HashMap<String,Object>();
@@ -52,11 +46,6 @@ public class ShouyeFragment extends Fragment {
             data2.put("price",price[i]);
             data2.put("info",info[i]);
             data2.put("num",num[i]+"");
-            data2.put("fuwu",fuwu[i]);
-            data2.put("shijian",shijian[i]);
-            data2.put("xiangqing",xiangqing[i]);
-            data2.put("imgs1",imgs1[i]);
-            data2.put("imgs2",imgs2[i]);
             items2.add(data2);
         }
         //定义适配器

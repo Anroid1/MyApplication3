@@ -51,6 +51,7 @@ tools:context=".gouwuche.ShangpingjmActivity">
             android:layout_height="wrap_content"
             android:id="@+id/spl2"
             android:orientation="horizontal">
+
             <com.synnapps.carouselview.CarouselView
                 android:id="@+id/carouselView"
                 android:layout_width="match_parent"
@@ -62,7 +63,7 @@ tools:context=".gouwuche.ShangpingjmActivity">
                 app:strokeColor="#FF777777"
 
 
-                app:strokeWidth="1dp"/>
+                app:strokeWidth="1dp" />
         </LinearLayout>
 
         <TextView

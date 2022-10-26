@@ -14,8 +14,8 @@
         android:id="@+id/Mygouwuchexuanze"
         android:button="@drawable/duoxuanys"/>
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
         android:id="@+id/iv_img"
         android:layout_gravity="center"/>
     <LinearLayout
@@ -41,14 +41,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/jiage"
-            android:textColor="#FF4777"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/jiage"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="#FF4777"
+                android:textSize="18dp"
+                android:textStyle="bold" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
