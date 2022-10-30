@@ -135,7 +135,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnDecrease"
+                    android:id="@+id/btnIncrease"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/jia"
@@ -151,7 +151,7 @@
                     android:textColor="@color/black" />
 
                 <Button
-                    android:id="@+id/btnIncrease"
+                    android:id="@+id/btnDecrease"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/jian"

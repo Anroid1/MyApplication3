@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.example.myapplication.R;
 import com.example.myapplication.entity.Goods;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class CartAdapter extends BaseAdapter {
@@ -44,7 +45,7 @@ public class CartAdapter extends BaseAdapter {
         //实例化子项控件
         CheckBox b1;
         ImageView iv_items;
-        TextView tv_name_items,tv_price_items,tv_price_num,tv_price_guige;
+        TextView tv_name_items,tv_price_items,tv_price_num,tv_price_guige,tv_price_fuhao;
 
         b1=view.findViewById(R.id.mygouwuchecheckBox);
         iv_items=view.findViewById(R.id.iv_img);
@@ -57,7 +58,8 @@ public class CartAdapter extends BaseAdapter {
         Goods goods=items.get(i);
         iv_items.setImageResource(goods.getImg());
         tv_name_items.setText(goods.getName());
-        tv_price_items.setText(goods.getPrice()+"");
+        DecimalFormat decimalFormat=new DecimalFormat(".00");//构造方法的字符格式这里如果小数不足2位,会以0补足.
+        tv_price_items.setText(decimalFormat.format(goods.getPrice()));//format 返回的是字符串format()用于格式化方法，即用来控制字符串和变量的显示效果
         tv_price_num.setText(goods.getNum()+"");
         tv_price_guige.setText(goods.getGuige());
         return view;

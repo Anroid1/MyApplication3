@@ -12,7 +12,10 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.example.myapplication.R;
+import com.example.myapplication.adapter.CartAdapter;
+import com.example.myapplication.entity.Goods;
 import com.example.myapplication.fragment.GouwucheFragment;
+import com.example.myapplication.util.CartDBService;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,6 +32,13 @@ public class CgouwucheFragment extends Fragment {
         //从视图中获得控件
         ListView myList=view.findViewById(R.id.list1);
         ImageView qubian=view.findViewById(R.id.qubian);
+        //查询数据库
+        CartDBService cartDBService=new CartDBService(getContext());
+        cartDBService.getAllCart();
+        List<Goods> items=cartDBService.getAllCart();
+        //实例化适配器
+        CartAdapter cartAdapter=new CartAdapter(getContext(),items);
+        myList.setAdapter(cartAdapter);
         qubian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

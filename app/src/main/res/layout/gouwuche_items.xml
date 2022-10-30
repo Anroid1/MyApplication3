@@ -36,18 +36,28 @@
             android:layout_height="wrap_content"
             android:id="@+id/tv_desc"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:background="@drawable/juxinga"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/fuhao"
+             android:text="￥"
+             android:layout_marginTop="15dp"
+             android:textColor="#FF4777"
+             android:textSize="18dp"
+             android:textStyle="bold"/>
             <TextView
                 android:id="@+id/jiage"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textColor="#FF4777"
+                android:text="12.00"
                 android:textSize="18dp"
                 android:textStyle="bold" />
         <TextView
