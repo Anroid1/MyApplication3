@@ -10,8 +10,6 @@ public class Goods implements Serializable {
     private float price;
     private int num;
     private int img;
-
-
     public int getId() {
         return id;
     }
