@@ -7,9 +7,9 @@ import android.provider.SyncStateContract;
 
 import androidx.annotation.Nullable;
 //操作SQLite数据库基础类
-public class DBOpenHelper extends SQLiteOpenHelper {
+public class DBOpenHelp extends SQLiteOpenHelper {
     private static final String DB_NAME="fruits.db";
-    public DBOpenHelper(@Nullable Context context) {
+    public DBOpenHelp(@Nullable Context context) {
         super(context, DB_NAME, null, 1);
     }
 
@@ -18,9 +18,10 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         //创建数据表
         sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS cart_db(_id integer primary key autoincrement," +
                 "name text,guige text,price float,num integer,img long)");
-
+        //地址表
+        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS dizhi_db(_id integer primary key autoincrement,"+
+                "name text,phone text,diqu text,xdizhi text)");
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
 

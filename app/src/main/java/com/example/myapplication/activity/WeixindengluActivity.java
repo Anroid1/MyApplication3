@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.example.myapplication.R;
 
 public class WeixindengluActivity extends AppCompatActivity {
-    ImageView imgweixindenglu;
+    ImageView imgweixindenglu,tu2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +19,7 @@ public class WeixindengluActivity extends AppCompatActivity {
 
         //初始化控件
         imgweixindenglu =findViewById(R.id.weixindenglu);
-
+        tu2=findViewById(R.id.tu2);
 
         imgweixindenglu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +28,13 @@ public class WeixindengluActivity extends AppCompatActivity {
                 startActivityForResult(intent1,1);
             }
         });
-
+        tu2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(WeixindengluActivity.this,DengluActivity.class);
+                startActivityForResult(intent,1);
+            }
+        });
 
     }
 }

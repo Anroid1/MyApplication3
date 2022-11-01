@@ -11,10 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".wode.XiugaiDizhiActivity"
+            android:exported="false" />
+        <activity
             android:name=".gouwuche.ShangpingjmActivity"
             android:exported="true" />
         <activity
             android:name=".wode.AdddizhiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ShangpinActivity"
             android:exported="false" />
         <activity
             android:name=".wode.XiugaimimaActivity"
@@ -44,9 +50,6 @@
             android:name=".activity.DengluActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.ShangpinActivity"
-            android:exported="false" />
-        <activity
             android:name=".activity.ZhuceActivity"
             android:exported="false" />
         <activity
@@ -60,9 +63,7 @@
         </activity>
         <activity
             android:name=".activity.MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

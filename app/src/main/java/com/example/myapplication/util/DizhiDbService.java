@@ -5,51 +5,51 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.example.myapplication.entity.Dizhi;
 import com.example.myapplication.entity.Goods;
 
 import java.util.ArrayList;
 import java.util.List;
 
-//购物车的增删改查
-public class CartDBService {
-    public  static final String TABLE_NAME="cart_db";
+//地址的增删改查
+public class DizhiDbService {
+    public  static final String TABLE_NAME="dizhi_db";
     private DBOpenHelp dbOpenHelper;
-    public CartDBService(Context context){
+    public DizhiDbService(Context context){
         dbOpenHelper=new DBOpenHelp(context);
     }
-    //添加商品到购物车
-    public void addCart(Goods goods){
+//添加地址
+    public void addDizhi(Dizhi dizhi){
         //打开数据库
         SQLiteDatabase sqLiteDatabase=dbOpenHelper.getWritableDatabase();
         //将对象封装为键值对
         ContentValues values=new ContentValues();
-        values.put("name",goods.getName());
-        values.put("price",goods.getPrice());
-        values.put("num",goods.getNum());
-        values.put("img",goods.getImg());
-        values.put("guige",goods.getGuige());
+        values.put("name",dizhi.getName());
+        values.put("phone",dizhi.getPhone());
+        values.put("diqu",dizhi.getDiqu());
+        values.put("xdizhi",dizhi.getXdizhi());
         //存入数据
         sqLiteDatabase.insert(TABLE_NAME,null,values);
         //关闭数据库
         sqLiteDatabase.close();
+
     }
-    //查询所有的商品
-    public List<Goods> getAllCart(){
+    //查询所有商品
+    public List<Dizhi> getAllDizhi(){
         //打开数据库
         SQLiteDatabase sqLiteDatabase=dbOpenHelper.getWritableDatabase();
         Cursor cursor=sqLiteDatabase.query(TABLE_NAME,null,null,null,null,null,null);
-        List<Goods> goodsItem=new ArrayList<Goods>();
+        List<Dizhi> dizhiItem=new ArrayList<Dizhi>();
         while (cursor.moveToNext()){
-            Goods goods=new Goods();
-            goods.setId(cursor.getInt(0));
-            goods.setName(cursor.getString(1));
-            goods.setGuige(cursor.getString(2));
-            goods.setPrice(cursor.getFloat(3));
-            goods.setNum(cursor.getInt(4));
-            goods.setImg(cursor.getInt(5));
-            goodsItem.add(goods);
+            Dizhi dizhi=new Dizhi();
+            dizhi.setId(cursor.getInt(0));
+            dizhi.setName(cursor.getString(1));
+            dizhi.setPhone(cursor.getString(2));
+            dizhi.setDiqu(cursor.getString(3));
+            dizhi.setXdizhi(cursor.getString(4));
+            dizhiItem.add(dizhi);
 
         }
-       return goodsItem;
+        return dizhiItem;
     }
 }

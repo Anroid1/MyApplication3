@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
@@ -20,6 +21,7 @@ import com.example.myapplication.wode.DaishouhuoActivity;
 import com.example.myapplication.wode.DingdanActivity;
 import com.example.myapplication.wode.DizhiActivity;
 import com.example.myapplication.wode.GerenxinxiActivity;
+import com.example.myapplication.wode.XiugaimimaActivity;
 
 /**
  * 我的
@@ -37,9 +39,9 @@ public class WodeFragment extends Fragment {
         ImageView imageView1=view.findViewById(R.id.dingdan);
         ImageView imageView2=view.findViewById(R.id.daifu1);
         ImageView imageView3=view.findViewById(R.id.daishou);
-        LinearLayout li4=view.findViewById(R.id.l4);
-        LinearLayout li5=view.findViewById(R.id.l5);
-        LinearLayout li6=view.findViewById(R.id.l6);
+        RelativeLayout li4=view.findViewById(R.id.l4);
+        RelativeLayout li5=view.findViewById(R.id.l5);
+        RelativeLayout li6=view.findViewById(R.id.l6);
         //若没有登录，跳转登录页面
         myTitle.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,7 +88,7 @@ public class WodeFragment extends Fragment {
         li6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent6=new Intent(getActivity(), ShangpinActivity.class);
+                Intent intent6=new Intent(getActivity(), XiugaimimaActivity.class);
                 startActivity(intent6);
             }
         });

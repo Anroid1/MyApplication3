@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".wode.AdddizhiActivity">
+    tools:context=".wode.XiugaiDizhiActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,7 +13,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="15dp"
-            android:id="@+id/adI1"
+            android:id="@+id/fanhui"
             android:src="@drawable/button2"
             ></ImageView>
         <TextView
@@ -22,7 +22,7 @@
             android:id="@+id/adt1"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="新增地址"></TextView>
+            android:text="修改地址"></TextView>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -165,13 +165,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:id="@+id/baocun"
+            android:id="@+id/xiugai"
             android:layout_weight="1"
-            android:text="保存"
+            android:text="修改"
             android:textColor="@color/white"
             android:gravity="center"
             android:textSize="14dp"
             android:background="@drawable/new_button2">
         </Button>
     </LinearLayout>
+
 </RelativeLayout>
