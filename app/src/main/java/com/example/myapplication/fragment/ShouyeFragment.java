@@ -32,11 +32,11 @@ public class ShouyeFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_shouye, container, false);
         //商品
         //定义数据
-        int imgs[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.xiyou,R.drawable.shouye3,R.drawable.fanqie,R.drawable.caomei};
-        String goods[]={"梨子","桔子","西柚","豌豆荚","番茄","草莓"};
+        int imgs[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.mangguo1,R.drawable.shouye3,R.drawable.fanqie3,R.drawable.caomei};
+        String goods[]={"香梨","爱媛橙","芒果","豌豆荚","番茄","草莓"};
         int num[]={1000,1050,3000,2450,500,2000};
-        String info[]={"清肺润心/家中必备","清肺润心/家中必备","清肺润心/家中必备","清肺润心/家中必备"
-                ,"清肺润心/家中必备","清肺润心/家中必备"};
+        String info[]={"清肺润心/家中必备","四川爱媛/口味爆甜","攀枝花凯特芒","颗颗圆满/软软糯糯"
+                ,"清甜爽口/汁水丰富","新鲜草莓/营养丰富"};
         String price[]={"￥13.20","￥5.00","￥4.00","￥4.50","￥2.00","￥3.30","￥5.20","￥5.00"};
         List<Map<String,Object>> items2=new ArrayList<Map<String,Object>>();
         for (int i=0;i<goods.length;i++){

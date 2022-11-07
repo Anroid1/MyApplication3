@@ -16,22 +16,24 @@ import com.example.myapplication.util.CartDBService;
 
 public class ShangpinActivity extends AppCompatActivity {
     private int amount = 1;
-    int imgs[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.xiyou,R.drawable.shouye3,
-            R.drawable.fanqie,R.drawable.caomei};
-    String goods[]={"丹东99草莓新鲜水果个大且甜现摘现在现发货应季水果包邮送到家 ...","爱媛38号果冻橙新鲜橙子当季水果水果柑橘蜜桔子整箱大果橙包邮 ... ",
-            "当季蔬菜套餐包括西兰花生菜包菜大西芹青瓜小南瓜等新鲜的蔬菜 ...","豌豆荚","番茄","丹东99草莓新鲜水果个大且甜现摘现在现发货应季水果包邮送到家 ..."};
-
-    String info[]={"清肺润心/家中必备","清肺润心/家中必备","清肺润心/家中必备","清肺润心/家中必备"
-            ,"清肺润心/家中必备","清肺润心/家中必备"};
+    int imgs[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.mangguo1,R.drawable.wandou1,
+            R.drawable.fanqie3,R.drawable.caomei};
+    String goods[]={"牧疆山新疆库尔勒大红香酥梨1斤新鲜水果当季香梨整箱青雪酥梨应季特产梨子包邮",
+            "四川爱媛38号果冻橙手剥橙子水果新鲜柑橘子当季1斤甜橙整箱现摘",
+            "攀枝花凯特芒果新鲜1斤四川应当季整箱水果礼盒特大忙果包邮芒果",
+            "豌豆新鲜云南高原带壳青豆角脆甜水果豌豆荚现摘现发蔬菜净重1斤",
+            "普罗旺斯西红柿新鲜自然熟山东海阳柿子生吃沙瓤1水果大番茄",
+            "新鲜草莓牛奶草莓非丹东99草莓奶油红颜当季礼盒孕妇水果现摘现发"};
+    String info[]={"清肺润心/家中必备","四川爱媛/口味爆甜","攀枝花凯特芒","颗颗圆满/软软糯糯"
+            ,"清甜爽口/汁水丰富","新鲜草莓/营养丰富"};
     String price[]={"￥13.20","￥5.00","￥4.00","￥4.50","￥2.00","￥3.30","￥5.20","￥5.00"};
     String shuliang[]={"数量","数量","数量","数量","数量","数量"};
     String fuwu[]={"规格","规格","规格","规格","规格","规格"};
     int num[]={amount,amount,amount,amount,amount,amount};
     String shijian[]={"中大果","60mm-70mm","新鲜蔬菜","中大果","中大果","中大果"};
     String xiangqing[]={"商品详情","商品详情","商品详情","商品详情","商品详情","商品详情"};
-    int imgs1[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.xiyou,R.drawable.shouye3,R.drawable.fanqie,R.drawable.caomei};
-    int imgs2[] = {R.drawable.lizi, R.drawable.juzi,R.drawable.xiyou,R.drawable.shouye3,R.drawable.fanqie,R.drawable.caomei};
-
+    int imgs1[] = {R.drawable.lizi1, R.drawable.chengzi1,R.drawable.mangguo2,R.drawable.wandou2,R.drawable.fanqie1,R.drawable.caomei1};
+    int imgs2[] = {R.drawable.lizi2, R.drawable.chengzi2,R.drawable.mangguo3,R.drawable.wandou3,R.drawable.fanqie2,R.drawable.caomei2};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
