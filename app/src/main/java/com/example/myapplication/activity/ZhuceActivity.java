@@ -66,11 +66,5 @@ public class ZhuceActivity extends AppCompatActivity {
             editText2.setText(s1);
         }
 
-
-
-
-
-
-
     }
 }
