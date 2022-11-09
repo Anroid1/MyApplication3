@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".gouwuche.ComfireActivity"
+            android:exported="true" />
+        <activity
             android:name=".gouwuche.ShangpingjmActivity"
             android:exported="true" />
         <activity
@@ -60,9 +63,7 @@
         </activity>
         <activity
             android:name=".activity.MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
