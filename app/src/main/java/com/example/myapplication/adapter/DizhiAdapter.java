@@ -4,11 +4,14 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.entity.Dizhi;
 
+import java.util.HashMap;
 import java.util.List;
 
 /*
@@ -17,10 +20,18 @@ import java.util.List;
 public class DizhiAdapter extends BaseAdapter {
     private Context context;//上下文
     private List<Dizhi> items;//数据源
+    private HashMap<Object,Integer> pichOnMap;//记录子项选择状态
+    public HashMap<Object,Integer> getPichOnMap() { return pichOnMap; }
+    public void setPichOnMap(HashMap<Object,Integer> pichOnMap) {this.pichOnMap =pichOnMap;}
     //构造方法
     public DizhiAdapter(Context context,List<Dizhi> items){
         this.context=context;
         this.items=items;
+        pichOnMap=new HashMap<Object,Integer>();
+        //初始化选择框状态都为0
+        for (int i=0;i<items.size();i++){
+            pichOnMap.put(items.get(i).getId(),0);
+        }
     }
     @Override
     public int getCount() {
@@ -47,6 +58,8 @@ public class DizhiAdapter extends BaseAdapter {
         TextView phone;
         TextView diqu;
         TextView xdizhi;
+        CheckBox rb_items;
+        rb_items=view.findViewById(R.id.rb_items);
         name=view.findViewById(R.id.name);
         phone=view.findViewById(R.id.phone);
         diqu=view.findViewById(R.id.diqu);
@@ -57,6 +70,24 @@ public class DizhiAdapter extends BaseAdapter {
         phone.setText(dizhi.getPhone());
         diqu.setText(dizhi.getDiqu());
         xdizhi.setText(dizhi.getXdizhi());
+       /* rb_items.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (rb_items.isChecked()){
+                    //选择框被选中，将其状态记录为1
+                    pichOnMap.put(items.get(i).getId(),1);
+
+                }else {
+                    pichOnMap.put(items.get(i).getId(),0);
+                }
+            }
+        });
+        //改变选择框的显示
+        if (pichOnMap.get(items.get(i).getId())==0){
+            rb_items.setChecked(false);
+        }else {
+            rb_items.setChecked(true);
+        }*/
         return view;
     }
 }

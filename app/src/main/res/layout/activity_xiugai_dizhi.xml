@@ -5,31 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".wode.XiugaiDizhiActivity">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/adl1"
-        android:orientation="horizontal">
+        android:layout_height="50dp"
+        android:id="@+id/dzl1"
+        android:background="@color/white"
+        >
         <ImageView
+            android:id="@+id/fanhui"
             android:layout_width="wrap_content"
             android:layout_height="15dp"
-            android:id="@+id/fanhui"
-            android:src="@drawable/button2"
-            ></ImageView>
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/button2"></ImageView>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/adt1"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/dzt1"
+            android:text="编辑地址"
+            android:textColor="@color/black"
             android:gravity="center"
-            android:text="修改地址"></TextView>
-    </LinearLayout>
+            ></TextView>
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:id="@+id/adl2"
-        android:layout_below="@id/adl1"
-        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:layout_below="@id/dzl1"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
@@ -62,6 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:id="@+id/adl3"
+        android:background="@color/white"
         android:layout_below="@id/adv1"
         android:orientation="horizontal">
         <TextView
@@ -95,6 +101,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:id="@+id/adl4"
+        android:background="@color/white"
         android:layout_below="@id/adv2"
         android:orientation="horizontal">
         <TextView
@@ -126,9 +133,10 @@
         />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="40dp"
         android:id="@+id/adl5"
         android:layout_below="@id/adv3"
+        android:background="@color/white"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"

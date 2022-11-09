@@ -15,7 +15,7 @@ import com.example.myapplication.entity.Dizhi;
 import com.example.myapplication.util.DizhiDbService;
 
 public class AdddizhiActivity extends AppCompatActivity {
-    final int CODE=0x11;
+
     EditText xingming,phone,diqu,xdizhi;
 ImageView adI1;
     Button baocun;
@@ -41,11 +41,7 @@ ImageView adI1;
         baocun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Bundle bundle=new Bundle();
-                bundle.putCharSequence("xingming", xingming.getText().toString());   //将两个编辑框的内容读取出来保存到bundle中
-                bundle.putCharSequence("phone", phone.getText().toString());
-                bundle.putCharSequence("dizhi",diqu.getText().toString());
-                bundle.putCharSequence("xdizhi",xdizhi.getText().toString());*/
+
                 Dizhi dizhi=new Dizhi();
                 dizhi.setName(xingming.getText().toString());
                 dizhi.setPhone(phone.getText().toString());

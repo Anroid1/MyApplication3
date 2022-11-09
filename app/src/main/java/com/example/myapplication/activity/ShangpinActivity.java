@@ -41,6 +41,7 @@ public class ShangpinActivity extends AppCompatActivity {
         Intent intent=getIntent();
         int i=intent.getIntExtra("gid",0);
         //获取页面上的控件
+        ImageView fanhui=findViewById(R.id.fanhui);
         ImageView iv_info=findViewById(R.id.iv_info);
         TextView tv_info=findViewById(R.id.tv_info);
         TextView tv_price=findViewById(R.id.tv_price);
@@ -111,6 +112,7 @@ public class ShangpinActivity extends AppCompatActivity {
 
             }
         });
+
 
     }
 
