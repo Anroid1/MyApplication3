@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_gerenxinxi.xml" value="0.175" />
         <entry key="..\:/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_main.xml" value="0.175" />
         <entry key="..\:/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_shangpin.xml" value="0.175" />
+        <entry key="..\:/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_zhuce.xml" value="0.159375" />
         <entry key="..\:/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_fenlei.xml" value="0.175" />
         <entry key="..\:/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_shouye.xml" value="0.175" />
         <entry key="..\:/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_wode.xml" value="0.175" />
