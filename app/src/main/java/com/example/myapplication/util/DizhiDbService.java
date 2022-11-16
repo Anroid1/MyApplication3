@@ -54,7 +54,6 @@ public class DizhiDbService {
             dizhi.setDiqu(cursor.getString(3));
             dizhi.setXdizhi(cursor.getString(4));
             dizhiItem.add(dizhi);
-
         }
         return dizhiItem;
     }
@@ -76,9 +75,9 @@ public class DizhiDbService {
     }
 
     //删除地址
-    public void deleteDizhi(String id) {
+    public void deleteDizhi(int id) {
         SQLiteDatabase sqLiteDatabase = dbOpenHelper.getWritableDatabase();
-        sqLiteDatabase.delete("TABLE_NAME","_id=?",new String[]{id});
+        sqLiteDatabase.delete("dizhi_db","_id=?",new String[]{String.valueOf(id)});
 
     }
 

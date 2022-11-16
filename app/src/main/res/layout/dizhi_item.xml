@@ -7,11 +7,12 @@
     >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:background="@color/white">
     <LinearLayout
-        android:layout_width="60dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:orientation="vertical"
         android:id="@+id/dzl1">
@@ -19,35 +20,43 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/name"
+
+            android:textSize="18dp"
             android:text="韩先生"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/diqu"
+
+            android:textSize="18dp"
+
             android:text="江苏省"></TextView>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/dzl1"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/phone"
+            android:textSize="18dp"
             android:text="17781004515"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/xdizhi"
+            android:textSize="18dp"
             android:text="苏州市 相城区 嘉元路663号康桥花园"></TextView>
     </LinearLayout>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="15dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="23dp"
             android:layout_alignParentRight="true"
             android:id="@+id/xiugaidz"
             android:src="@drawable/button1"

@@ -14,8 +14,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
+import com.example.myapplication.activity.MainActivity;
 import com.example.myapplication.adapter.DizhiAdapter;
 import com.example.myapplication.entity.Dizhi;
+import com.example.myapplication.fragment.WodeFragment;
 import com.example.myapplication.util.DizhiDbService;
 
 import java.util.List;
@@ -52,7 +54,8 @@ public class DizhiActivity extends AppCompatActivity {
         dzI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent2=new Intent(DizhiActivity.this, MainActivity.class);
+                startActivity(intent2);
             }
         });
         bianji.setOnClickListener(new View.OnClickListener() {

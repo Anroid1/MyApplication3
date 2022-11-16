@@ -36,9 +36,10 @@ public class WodeFragment extends Fragment {
         //从视图中获得控件
         ImageView myTitle =view.findViewById(R.id.touxiang);
         TextView textView=view.findViewById(R.id.nicheng);
-        ImageView imageView1=view.findViewById(R.id.dingdan);
+        RelativeLayout rl2=view.findViewById(R.id.rl2);
+        /*ImageView imageView1=view.findViewById(R.id.dingdan);
         ImageView imageView2=view.findViewById(R.id.daifu1);
-        ImageView imageView3=view.findViewById(R.id.daishou);
+        ImageView imageView3=view.findViewById(R.id.daishou);*/
         RelativeLayout li4=view.findViewById(R.id.l4);
         RelativeLayout li5=view.findViewById(R.id.l5);
         RelativeLayout li6=view.findViewById(R.id.l6);
@@ -50,7 +51,14 @@ public class WodeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        imageView1.setOnClickListener(new View.OnClickListener() {
+        rl2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(getActivity(), DingdanActivity.class);
+                startActivity(intent1);
+            }
+        });
+        /*imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent1=new Intent(getActivity(), DingdanActivity.class);
@@ -70,10 +78,11 @@ public class WodeFragment extends Fragment {
                 Intent intent3=new Intent(getActivity(), DaishouhuoActivity.class);
                 startActivity(intent3);
             }
-        });
+        });*/
         li4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent4=new Intent(getActivity(), GerenxinxiActivity.class);
                 startActivity(intent4);
             }

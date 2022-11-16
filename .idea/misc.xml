@@ -12,6 +12,7 @@
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/new_button2.xml" value="0.149" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/translucent.xml" value="0.1705" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_adddizhi.xml" value="0.264" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_comfire.xml" value="0.25364583333333335" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_daifukuan.xml" value="0.18568840579710144" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_daishouhuo.xml" value="0.18568840579710144" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_denglu.xml" value="0.1" />
@@ -28,13 +29,14 @@
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_xiugai_dizhi.xml" value="0.25364583333333335" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_xiugaimima.xml" value="0.18568840579710144" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_zhuce.xml" value="0.12335359675785208" />
-        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/dizhi_item.xml" value="0.25364583333333335" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/comfire_items.xml" value="0.25364583333333335" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/dizhi_item.xml" value="0.1" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/dizhibj_item.xml" value="0.25364583333333335" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_cgouwuche.xml" value="0.2" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_fenlei.xml" value="0.25364583333333335" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_gouwuche.xml" value="0.25364583333333335" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_shouye.xml" value="0.22327898550724637" />
-        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_wode.xml" value="0.19067028985507245" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_wode.xml" value="0.1" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/goods_item.xml" value="0.18854166666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/gouwuche_items.xml" value="0.25364583333333335" />
         <entry key="..\:/Program Files/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/layout_wode.xml" value="0.18568840579710144" />

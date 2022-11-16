@@ -11,9 +11,11 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.myapplication.R;
 import com.example.myapplication.adapter.DizhiAdapter;
+import com.example.myapplication.adapter.DizhibjAdapter;
 import com.example.myapplication.entity.Dizhi;
 import com.example.myapplication.util.DizhiDbService;
 
@@ -22,11 +24,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-public class DizhibjActivity extends AppCompatActivity {
+public class DizhibjActivity extends AppCompatActivity implements  DizhibjAdapter.RefreshInterface{
     Button dzb;
     ListView list1;
-    ImageView dzI,qubian;
+    ImageView dzI,qubian,shangchu;
     CheckBox rb_all;
+    List<Dizhi> items;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,17 +41,21 @@ public class DizhibjActivity extends AppCompatActivity {
         rb_all=findViewById(R.id.rb_all);
         //查询数据库
         DizhiDbService dizhiDbService=new DizhiDbService(this);
-        List<Dizhi> items=dizhiDbService.getAllDizhi();
+         items=dizhiDbService.getAllDizhi();
 
         //实例化适配器
-        DizhiAdapter dizhiAdapter=new DizhiAdapter(this,items);
-        list1.setAdapter(dizhiAdapter);
+        DizhibjAdapter dizhibjAdapter=new DizhibjAdapter(this,items);
+        list1.setAdapter(dizhibjAdapter);
+        //
+        dizhibjAdapter.setRefreshInterface(this);
         qubian=findViewById(R.id.qubian);
+        shangchu=findViewById(R.id.shangchu);
         rb_all=findViewById(R.id.rb_all);
+        //实现全选
        rb_all.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                HashMap<Object,Integer> map=dizhiAdapter.getPichOnMap();
+                HashMap<Object,Integer> map=dizhibjAdapter.getPichOnMap();
                 boolean isCheck=false;
                 boolean isUncheck=false;
                 Iterator iterator=map.entrySet().iterator();
@@ -79,6 +86,9 @@ public class DizhibjActivity extends AppCompatActivity {
                     }
                     rb_all.setChecked(true);
                 }
+                anControl(map);
+                dizhibjAdapter.setPichOnMap(map);
+                dizhibjAdapter.notifyDataSetChanged();
             }
         });
         qubian.setOnClickListener(new View.OnClickListener() {
@@ -88,9 +98,39 @@ public class DizhibjActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        shangchu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(DizhibjActivity.this,DizhibjActivity.class);
 
+                //被选中的
+                HashMap<Object,Integer>map=dizhibjAdapter.getPichOnMap();
+                int[] id = new int[items.size()];
 
+                for (int i=0;i<items.size();i++){
+                    if(map.get(items.get(i).getId())==1){
+                        int id1=items.get(i).getId();
+                        DizhiDbService dizhiDbService=new DizhiDbService(DizhibjActivity.this);
+                        dizhiDbService.deleteDizhi(id1);
+                        Toast.makeText(DizhibjActivity.this,"地址删除成功",Toast.LENGTH_SHORT).show();
+                        Intent intent=new Intent(DizhibjActivity.this,DizhiActivity.class);
+                        startActivity(intent);
+                    }
+                }
 
+            }
+        });
     }
-
+    @Override
+    public void refresh(HashMap<Object, Integer> pitchOnMap) {
+                anControl(pitchOnMap);
+    }
+    public void anControl(Map<Object,Integer> pitchOnMap){
+        for (int i=0;i<items.size();i++){
+            if (pitchOnMap.get(items.get(i).getId())==1){
+                int id1=items.get(i).getId();
+                Toast.makeText(DizhibjActivity.this,"选择成功",Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
 }
