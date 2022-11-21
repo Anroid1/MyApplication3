@@ -67,6 +67,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/tv_acount"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@+id/fuhaoa"
@@ -76,7 +77,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/tv_addcart"
+            android:id="@+id/tv_comfire"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_alignParentRight="true"
@@ -174,23 +175,26 @@
                 android:layout_marginLeft="1mm"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="1mm"
-                android:background="@drawable/zhuyao">
+                android:background="@drawable/fangkuai">
 
                 <ListView
-                    android:id="@+id/list1"
+                    android:id="@+id/list2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="1mm"
-                    android:layout_marginTop="10dp"
                     android:layout_marginRight="1mm"
-                    android:divider="@color/grey"
-                    android:dividerHeight="10dp" />
+                    android:divider="@drawable/qiange"
+                    android:dividerPadding="10dp" />
 
                 <RelativeLayout
                     android:id="@+id/kuaidi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/list1">
+                    android:layout_below="@+id/list2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingBottom="20dp">
 
                     <TextView
                         android:id="@+id/spt6"
@@ -293,6 +297,7 @@
                             android:textStyle="bold" />
 
                         <CheckBox
+                            android:id="@+id/radio1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -323,6 +328,7 @@
                             android:textStyle="bold" />
 
                         <CheckBox
+                            android:id="@+id/radio2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -354,6 +360,7 @@
                             android:textStyle="bold" />
 
                         <CheckBox
+                            android:id="@+id/radio3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"

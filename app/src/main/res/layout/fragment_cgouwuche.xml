@@ -43,6 +43,7 @@
         android:layout_alignParentBottom="true"
         android:id="@+id/jiesuanlan"
         android:layout_marginBottom="2dp">
+
         <CheckBox
             android:id="@+id/mygouwuchecheckBox"
             android:layout_width="wrap_content"
@@ -60,14 +61,15 @@
             android:layout_marginRight="125dp"
             android:id="@+id/qubian"
             android:src="@drawable/qubian" />
+
         <ImageView
+            android:id="@+id/shangchu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="25dp"
-            android:src="@drawable/shangchu"
-            android:id="@+id/shangchu"/>
+            android:src="@drawable/shangchu" />
     </RelativeLayout>
 
 </RelativeLayout>
