@@ -4,15 +4,8 @@
     android:layout_height="150dp"
     android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal"
-    android:background="@drawable/juxing"
-    android:gravity="right">
-    <CheckBox
-        android:layout_gravity="center"
-        android:layout_height="match_parent"
-        android:layout_width="32dp"
-        android:layout_marginLeft="5dp"
-        android:id="@+id/Mygouwuchexuanze"
-        android:button="@drawable/duoxuanys"/>
+    android:background="@drawable/juxing">
+
     <ImageView
         android:layout_width="135dp"
         android:layout_height="100dp"

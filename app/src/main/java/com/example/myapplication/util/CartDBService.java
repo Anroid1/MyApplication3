@@ -52,4 +52,10 @@ public class CartDBService {
         }
        return goodsItem;
     }
+    //删除选中商品
+    public void deleteCart(int id){
+        SQLiteDatabase sqLiteDatabase=dbOpenHelper.getWritableDatabase();
+        sqLiteDatabase.delete(TABLE_NAME,"_id=?",new String[]{String.valueOf(id)});
+    }
+
 }

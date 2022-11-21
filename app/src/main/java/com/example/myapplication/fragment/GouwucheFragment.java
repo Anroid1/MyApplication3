@@ -131,17 +131,17 @@ public class GouwucheFragment extends Fragment implements CartAdapter.JiPriceInt
                     Intent intent=new Intent(getActivity(), ComfireActivity.class);
                     //被选中的项目
                     HashMap<Object,Integer> map=cartAdapter.getPichOnMap();
-                    int id[]=new int[items.size()];
+                    //int id[]=new int[items.size()];
                     int a=0;
                     for (int i=0;i<items.size();i++){
 
                         if (map.get(items.get(i).getId())==1){
-                            intent.putExtra(i+"",items.get(i));
-                            id[a]=i;
+                            intent.putExtra(a+"",items.get(i));
+                            //id[a]=i;
                             a++;
                         }
                     }
-                    intent.putExtra("id",id);
+                    intent.putExtra("id",a);
                     startActivity(intent);
                 }
             }
