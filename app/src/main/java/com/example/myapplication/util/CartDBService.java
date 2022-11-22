@@ -17,6 +17,8 @@ public class CartDBService {
     public CartDBService(Context context){
         dbOpenHelper=new DBOpenHelp(context);
     }
+
+
     //添加商品到购物车
     public void addCart(Goods goods){
         //打开数据库

@@ -22,9 +22,10 @@
             android:textSize="18dp"
             android:textStyle="bold" />
     </RelativeLayout>
-    <TextView
+    <ExpandableListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="这是分类界面" />
+        android:layout_height="wrap_content"
+        android:id="@+id/exlist_type"
+        android:background="@color/teal_200"/>
 
 </LinearLayout>
