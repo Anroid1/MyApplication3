@@ -23,8 +23,6 @@ import com.example.myapplication.util.UserAdd;
 public class ZhuceActivity extends AppCompatActivity {
     EditText editText1,editText2;
     ImageView imgzhuce;
-    private String  phone;
-    private String password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,19 +36,24 @@ public class ZhuceActivity extends AppCompatActivity {
         imgzhuce.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                User user=new User();
-                user.setPhone(editText1.getText().toString().trim());
-                user.setPassword(editText2.getText().toString().trim());
-                if(!TextUtils.isEmpty(phone)&&!TextUtils.isEmpty(password)){
-                    Toast.makeText(ZhuceActivity.this,"信息不完备，注册失败",Toast.LENGTH_SHORT).show();
+                String phone=editText1.getText().toString().trim();
+                String password=editText2.getText().toString().trim();
+                if ((phone.length()==0) ||(password.length() ==0)){
+                    Toast.makeText(ZhuceActivity.this,"手机号或密码不能为空",Toast.LENGTH_SHORT).show();
+                    return;
                 }else {
+                    User user = new User();
+                    user.setPhone(phone);
+                    user.setPassword(password);
                     //将数据存入SQLite数据表
-                    UserAdd userAdd=new UserAdd(ZhuceActivity.this);
+                    UserAdd userAdd = new UserAdd(ZhuceActivity.this);
                     userAdd.addUser(user);
-                    Toast.makeText(ZhuceActivity.this,"注册成功",Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(ZhuceActivity.this,DengluActivity.class);
+                    Toast.makeText(ZhuceActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ZhuceActivity.this, DengluActivity.class);
+                    intent.putExtra("phone",phone);
+                    intent.putExtra("password",password);
                     startActivity(intent);
-                    }
+                }
             }
         });
     }

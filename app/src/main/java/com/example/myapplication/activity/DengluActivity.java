@@ -21,9 +21,11 @@ import com.example.myapplication.R;
 import com.example.myapplication.adapter.CartAdapter;
 import com.example.myapplication.entity.Goods;
 import com.example.myapplication.entity.User;
+import com.example.myapplication.fragment.WodeFragment;
 import com.example.myapplication.util.CartDBService;
 import com.example.myapplication.util.DBOpenHelper;
 import com.example.myapplication.util.UserAdd;
+import com.example.myapplication.wode.GerenxinxiActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,20 +35,23 @@ public class DengluActivity extends AppCompatActivity {
     TextView zhuce;
     EditText editText1,editText2;
     ImageView imgdenglu,imgweixin,imgqq;
-    private String phone,password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_denglu);
         //初始化控件
+
+        Intent intent1=getIntent();
+        String phone1=intent1.getStringExtra("phone");
+        String password1=intent1.getStringExtra("password");
         zhuce =findViewById(R.id.bu_zhuce);
         editText1 =findViewById(R.id.sjh);
+        editText1.setText(phone1);
         editText2 =findViewById(R.id.mm);
+        editText2.setText(password1);
         imgdenglu =findViewById(R.id.denglu);
         imgweixin =findViewById(R.id.tu1);
         imgqq =findViewById(R.id.tu2);
-
-
 
         //登录后弹出欢迎
         imgdenglu.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +66,7 @@ public class DengluActivity extends AppCompatActivity {
 
                 String phone=editText1.getText().toString().trim();
                 String password=editText2.getText().toString().trim();
+
                 if ((phone.length()==0) ||(password.length() ==0)){
                     Toast.makeText(DengluActivity.this,"手机号或密码不能为空",Toast.LENGTH_SHORT).show();
                     return;
@@ -68,22 +74,16 @@ public class DengluActivity extends AppCompatActivity {
                 UserAdd userAdd=new UserAdd(DengluActivity.this);
                 List<User> userList=userAdd.getUser(phone);
                 if (userList.get(0)!=null){
-                    String dbpassword=userList.get(0).getPassword();
-                    String dbphone=userList.get(0).getPhone();
-                    if (password.equals(dbpassword)){
+                    String dbpassword = userList.get(0).getPassword();
+                    if (password.equals(dbpassword)) {
                         Intent intent=new Intent(DengluActivity.this,MainActivity.class);
                         startActivity(intent);
-                        return;
-                    }else if (phone!=dbphone){
-                        Toast.makeText(DengluActivity.this,"用户不存在",Toast.LENGTH_SHORT).show();
-                        return;
                     }else {
                         Toast.makeText(DengluActivity.this,"密码不正确",Toast.LENGTH_SHORT).show();
                         return;
                     }
+                }
 
-
-            }
             }
         });
 
@@ -105,3 +105,4 @@ public class DengluActivity extends AppCompatActivity {
     }
 
 }
+

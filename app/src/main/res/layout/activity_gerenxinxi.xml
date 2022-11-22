@@ -106,20 +106,26 @@
         android:id="@+id/gv2"
         android:layout_below="@+id/gl3"
         />
+
     <LinearLayout
+        android:id="@+id/gl4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/gl4"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/gv2">
+        android:layout_below="@id/gv2"
+        android:layout_marginTop="10dp">
+
         <TextView
+            android:id="@+id/gt5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/gt5"
             android:layout_marginLeft="20dp"
-            android:textColor="#101010"
-            android:text="手机号码">
-        </TextView>
+            android:text="手机号码"
+            android:textColor="#101010"></TextView>
+
+        <EditText
+            android:id="@+id/phone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
     </LinearLayout>
     <View
         android:layout_width="match_parent"
