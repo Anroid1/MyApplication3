@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.myapplication.R;
 import com.example.myapplication.activity.MainActivity;
@@ -50,8 +51,13 @@ public class LijigoumaiActivity extends AppCompatActivity {
         fuhao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1=new Intent(LijigoumaiActivity.this, ShangpinActivity.class);
-                startActivity(intent1);
+                if (radio1.isChecked() == false &&radio2.isChecked() == false&&radio3.isChecked() == false){
+                    Toast.makeText(LijigoumaiActivity.this, "请选择支付方式", Toast.LENGTH_SHORT).show();
+                }else {
+                    Intent intent = new Intent(LijigoumaiActivity.this, JSchenggongActivity.class);
+                    startActivity(intent);
+                }
+
 
             }
         });

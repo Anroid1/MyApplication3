@@ -54,13 +54,12 @@
     </LinearLayout>
 
         <ImageView
+            android:id="@+id/xiugaidz"
             android:layout_width="wrap_content"
             android:layout_height="15dp"
-            android:layout_marginTop="23dp"
             android:layout_alignParentRight="true"
-            android:id="@+id/xiugaidz"
-            android:src="@drawable/button1"
-            ></ImageView>
+            android:layout_marginTop="23dp"
+            android:src="@drawable/button1"></ImageView>
 
     </RelativeLayout>
 

@@ -10,10 +10,10 @@ import com.example.myapplication.entity.Goods;
 import java.util.ArrayList;
 
 public class OrderDbService {
-    private DBOpenHelp dbOpenHelp;
+    private DBOpenHelper dbOpenHelp;
 
     OrderDbService(Context context){
-        dbOpenHelp=new DBOpenHelp((context));
+        dbOpenHelp=new DBOpenHelper((context));
     }
     //下单
 

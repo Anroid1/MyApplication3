@@ -5,18 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".gouwuche.JSchenggongActivity">
+
     <RelativeLayout
         android:id="@+id/biaotia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:background="@color/white">
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:id="@+id/tv_fh"
-            android:src="@drawable/fanhui"
-            android:layout_centerVertical="true"></ImageView>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,12 +39,14 @@
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/chading"/>
+
     <Button
+        android:id="@+id/fanhuishou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/chading"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/fanshou"/>
+        android:background="@drawable/fanshou" />
 
 </RelativeLayout>

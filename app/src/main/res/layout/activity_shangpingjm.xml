@@ -63,6 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -131,8 +132,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_price"
-                android:layout_marginLeft="250dp"
+                android:layout_alignParentRight="true"
                 android:layout_toRightOf="@+id/tv_num"
+                android:gravity="right"
+                android:paddingRight="20dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -187,10 +190,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_num"
-                android:layout_marginLeft="250dp"
+                android:layout_alignParentRight="true"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/spt6"
-                android:text="中小果，5斤"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:text="中小果，5斤   "
                 android:textSize="15dp" />
             <TextView
                 android:layout_width="wrap_content"

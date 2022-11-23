@@ -18,10 +18,10 @@ import java.util.List;
 public class DizhiDbService {
     final int CODE = 0x11;
     public static final String TABLE_NAME = "dizhi_db";
-    private DBOpenHelp dbOpenHelper;
+    private DBOpenHelper dbOpenHelper;
 
     public DizhiDbService(Context context) {
-        dbOpenHelper = new DBOpenHelp(context);
+        dbOpenHelper = new DBOpenHelper(context);
     }
 
     //添加地址

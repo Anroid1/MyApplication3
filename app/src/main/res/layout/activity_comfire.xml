@@ -138,6 +138,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/jinru"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="10dp"
@@ -211,7 +212,9 @@
                         android:id="@+id/spt7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="250dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
                         android:layout_marginTop="10dp"
                         android:layout_toRightOf="@+id/spt6"
                         android:text="快递运输"
@@ -234,7 +237,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/spt6"
-                        android:layout_marginLeft="250dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
                         android:layout_marginTop="10dp"
                         android:layout_toRightOf="@+id/spt6"
                         android:text="￥6.00"
@@ -295,14 +300,18 @@
                             android:textColor="@color/black"
                             android:textSize="18dp"
                             android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"/>
 
                         <CheckBox
                             android:id="@+id/radio1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="200dp"
-                            android:button="@drawable/duoxuanys" />
+                            android:button="@drawable/duoxuanys"
+                            android:layout_marginRight="10dp"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -326,14 +335,18 @@
                             android:textColor="@color/black"
                             android:textSize="18dp"
                             android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
 
                         <CheckBox
                             android:id="@+id/radio2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="182dp"
-                            android:button="@drawable/duoxuanys" />
+                            android:button="@drawable/duoxuanys"
+                            android:layout_marginRight="10dp"/>
 
                     </LinearLayout>
 
@@ -358,20 +371,24 @@
                             android:textColor="@color/black"
                             android:textSize="18dp"
                             android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"/>
 
                         <CheckBox
                             android:id="@+id/radio3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="200dp"
-                            android:button="@drawable/duoxuanys" />
+                            android:button="@drawable/duoxuanys"
+                            android:layout_marginRight="10dp"/>
                     </LinearLayout>
                 </LinearLayout>
 
 
             </RelativeLayout>
-    </RelativeLayout>
+        </RelativeLayout>
     </ScrollView>
 
 </RelativeLayout>

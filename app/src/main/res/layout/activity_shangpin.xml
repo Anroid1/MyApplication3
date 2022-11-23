@@ -132,9 +132,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_price"
-                android:layout_marginLeft="250dp"
+                android:layout_alignParentRight="true"
                 android:layout_toRightOf="@+id/tv_num"
-                android:orientation="horizontal">
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="20dp">
 
                 <Button
                     android:id="@+id/btnIncrease"
@@ -188,10 +190,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_num"
-                android:layout_marginLeft="250dp"
+                android:layout_alignParentRight="true"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/spt6"
-                android:text="中小果，5斤"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:text="中小果，5斤   "
                 android:textSize="15dp" />
             <TextView
                 android:layout_width="wrap_content"
