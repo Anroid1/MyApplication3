@@ -47,6 +47,9 @@ public class ComfireActivity extends AppCompatActivity {
             tv_comfire.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    Intent intent=new Intent(ComfireActivity.this,JSchenggongActivity.class);
+                    startActivity(intent);
+
 
                 }
             });
@@ -56,8 +59,7 @@ public class ComfireActivity extends AppCompatActivity {
             Intent intent = getIntent();
             int a = intent.getIntExtra("id", 0);
             ArrayList<Goods> goodsList = new ArrayList<Goods>();
-            for (int i = 0
-                 ; i < a; i++) {
+            for (int i = 0; i < a; i++) {
                 Goods goods = new Goods();
                 goods = (Goods) intent.getSerializableExtra(i + "");
                 goodsList.add(goods);

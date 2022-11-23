@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.example.myapplication.R;
 import com.example.myapplication.entity.Goods;
+import com.example.myapplication.gouwuche.ComfireActivity;
+import com.example.myapplication.gouwuche.LijigoumaiActivity;
 import com.example.myapplication.util.CartDBService;
 
 public class ShangpinActivity extends AppCompatActivity {
@@ -113,6 +115,31 @@ public class ShangpinActivity extends AppCompatActivity {
 
             }
         });
+        //立即购买
+        tv_buy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String text = tv_number.getText().toString();
+                int w[] = {Integer.parseInt(text), Integer.parseInt(text), Integer.parseInt(text), Integer.parseInt(text)
+                        , Integer.parseInt(text), Integer.parseInt(text)};
+                //获取页面的数据
+                Goods good2 = new Goods();
+                good2.setName(goods[i]);
+                good2.setGuige(shijian[i]);
+                String s = price[i].substring(1);
+                good2.setPrice((Float.parseFloat(s)));
+                good2.setNum(w[i]);
+                good2.setImg(imgs[i]);
+                //将数据存入SQLite数据表
+                CartDBService cartDBService = new CartDBService(ShangpinActivity.this);
+                cartDBService.addCartA(good2);
+                Intent intent1=new Intent(ShangpinActivity.this, LijigoumaiActivity.class);
+                startActivity(intent1);
+
+
+            }
+        });
+
 
     }
 

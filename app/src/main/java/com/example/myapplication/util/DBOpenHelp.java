@@ -18,12 +18,15 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         //创建数据表
         sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS cart_db(_id integer primary key autoincrement," +
                 "name text,guige text,price float,num integer,img long)");
-        //地址表
+//地址表
         sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS dizhi_db(_id integer primary key autoincrement,"+
                 "name text,phone text,diqu text,xdizhi text)");
         //创建登录注册的数据表
         sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS user_db(_id integer primary key autoincrement," +
                 "name text,phone text,password text,sex text,img long)");
+//创建立即购买数据表
+        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS liji_db(_id integer primary key autoincrement," +
+                "name text,guige text,price float,num integer,img long)");
 
     }
 

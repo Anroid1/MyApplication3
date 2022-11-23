@@ -29,7 +29,6 @@ import java.util.Map;
 
 public class CgouwucheFragment extends Fragment implements CartAdapter.JiPriceInterface{
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
