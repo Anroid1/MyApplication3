@@ -38,13 +38,7 @@
             android:name=".wode.GerenxinxiActivity"
             android:exported="false" />
         <activity
-            android:name=".wode.DaishouhuoActivity"
-            android:exported="false" />
-        <activity
             android:name=".wode.XiugaiDizhiActivity"
-            android:exported="false" />
-        <activity
-            android:name=".wode.DaifukuanActivity"
             android:exported="false" />
         <activity
             android:name=".wode.DingdanActivity"

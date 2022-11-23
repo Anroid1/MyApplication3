@@ -32,11 +32,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_below="@+id/touxiang"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="-1dp"
                 android:text="世界港口"
-                android:textSize="18dp"
-                android:textColor="@color/white" />
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/rl2"
@@ -117,7 +117,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_marginTop="2px"
+            android:layout_marginTop="1px"
             android:background="#CECECE"
             android:id="@+id/v2"
             android:layout_below="@+id/l4"
@@ -161,7 +161,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_marginTop="2px"
+            android:layout_marginTop="1px"
             android:background="#CECECE"
             android:id="@+id/v3"
             android:layout_below="@+id/l5"

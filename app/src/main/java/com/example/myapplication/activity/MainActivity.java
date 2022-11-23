@@ -14,21 +14,27 @@ import com.example.myapplication.fragment.FenleiFragment;
 import com.example.myapplication.fragment.GouwucheFragment;
 import com.example.myapplication.fragment.ShouyeFragment;
 import com.example.myapplication.fragment.WodeFragment;
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageListener;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     ImageView iv_shouye,iv_fenlei,iv_gouwuche,iv_wode;
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
-
+    CarouselView carouselView;
+    int[] sampleImages = {R.drawable.tup1, R.drawable.tup2, R.drawable.tup3, R.drawable.tup4, R.drawable.tup5};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+      /* carouselView=findViewById(R.id.carouselView);
+       carouselView.setPageCount(sampleImages.length);
+       carouselView.setImageListener(imageListener);*/
         iv_shouye=findViewById(R.id.na_shouye);
         iv_fenlei=findViewById(R.id.na_fenlei);
         iv_gouwuche=findViewById(R.id.na_gouwuche);
         iv_wode=findViewById(R.id.na_wode);
+
         //将ShouyeFragment添加到当前页面
         //实例化碎片管理器
         fragmentManager=getSupportFragmentManager();
@@ -49,6 +55,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
+/*ImageListener imageListener=new ImageListener() {
+    @Override
+    public void setImageForPosition(int position, ImageView imageView) {
+        imageView.setImageResource(sampleImages[position]);
+    }
+};*/
 
     @Override
     public void onClick(View view) {

@@ -20,16 +20,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/name"
-
+            android:textColor="#101010"
             android:textSize="18dp"
             android:text="韩先生"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/diqu"
-
+            android:textColor="#101010"
             android:textSize="18dp"
-
             android:text="江苏省"></TextView>
     </LinearLayout>
     <LinearLayout
@@ -43,12 +42,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/phone"
+            android:textColor="#101010"
             android:textSize="18dp"
             android:text="17781004515"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/xdizhi"
+            android:textColor="#101010"
             android:textSize="18dp"
             android:text="苏州市 相城区 嘉元路663号康桥花园"></TextView>
     </LinearLayout>

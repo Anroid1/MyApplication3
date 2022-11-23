@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textColor="@color/white"
         android:hint="季果蔬"
         android:textSize="22dp" />
 
@@ -43,17 +44,22 @@
             android:layout_height="wrap_content"
             android:id="@+id/bu_find"
             android:text="搜索"></TextView>
-
     </LinearLayout>
     </LinearLayout>
-    <ImageView
-        android:id="@+id/gv_home"
-        android:layout_width="410dp"
-        android:layout_height="175dp"
-        android:src="@drawable/xiyou"
-        android:background="@color/white"
-        android:layout_below="@+id/ll1"></ImageView>
-
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/xiyou"></ImageView>-->
+    <!--<com.synnapps.carouselview.CarouselView
+                   android:id="@+id/carouselView"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   app:fillColor="#FFFFFFFF"
+                   app:pageColor="#00000000"
+                   app:radius="6dp"
+                   app:slideInterval="3000"
+                   app:strokeColor="#FF777777"
+                   app:strokeWidth="1dp"/>-->
     <GridView
         android:id="@+id/gv_goods"
         android:layout_width="match_parent"

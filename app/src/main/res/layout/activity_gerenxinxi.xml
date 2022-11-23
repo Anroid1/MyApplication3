@@ -14,47 +14,50 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:id="@+id/adI1"
+            android:id="@+id/fanhui"
             android:src="@drawable/button2"
             ></ImageView>
+
         <TextView
             android:id="@+id/gt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textColor="#101010"
-            android:textSize="18dp"
             android:paddingBottom="20dp"
-            android:text="个人信息"></TextView>
+            android:text="个人信息"
+            android:textColor="#101010"
+            android:textSize="18dp"></TextView>
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/gl1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/gl1"
         android:layout_below="@+id/gl0"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <TextView
+            android:id="@+id/gt2"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:id="@+id/gt2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
             android:text="修改头像"
             android:textColor="#101010"
-            android:textSize="16dp"
-            android:gravity="center"
-            android:layout_marginLeft="20dp"
-            ></TextView>
+            android:textSize="16dp"></TextView>
+
         <ImageView
+            android:id="@+id/touxiang"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:id="@+id/gI1"
             android:layout_gravity="center"
             android:layout_marginLeft="170dp"
             android:src="@drawable/touxiang"></ImageView>
+
         <ImageView
+            android:id="@+id/gI2"
             android:layout_width="wrap_content"
             android:layout_height="12dp"
-            android:id="@+id/gI2"
             android:layout_gravity="center"
             android:src="@drawable/button1"></ImageView>
     </LinearLayout>
@@ -71,52 +74,44 @@
             android:textSize="16dp"
             android:layout_marginLeft="20dp"
             android:textColor="#101010"
-            android:text="昵称">
+            android:text="手机号码">
         </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            ></EditText>
 
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="#CECECE"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/gv1"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/gl2"
-        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/gl3"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/gv1">
-
+        android:id="@+id/glm"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/gl2">
         <TextView
-            android:id="@+id/gt4"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/gtm"
             android:textSize="16dp"
-            android:text="性别"
-            android:textColor="#101010"></TextView>
+            android:layout_marginLeft="20dp"
+            android:textColor="#101010"
+            android:text="密码        ">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mim"
+            ></EditText>
+
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="#CECECE"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/gv2"
-        android:layout_below="@+id/gl3"
-        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/gl4"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/gv2">
+        android:layout_below="@id/glm">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,19 +119,32 @@
             android:layout_marginLeft="20dp"
             android:textColor="#101010"
             android:textSize="16dp"
-            android:text="手机号码">
+            android:text="昵称        ">
         </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            ></EditText>
     </LinearLayout>
-    <View
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="#CECECE"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/gv3"
-        android:layout_below="@+id/gl4"
-        />
+        android:layout_height="wrap_content"
+        android:id="@+id/spl1"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
 
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/xuigaib"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:background="@drawable/new_button2">
+        </Button>
+    </LinearLayout>
 </RelativeLayout>
