@@ -5,23 +5,19 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
-import com.example.myapplication.activity.MainActivity;
+import com.example.myapplication.activity.ShangpinActivity;
 import com.example.myapplication.adapter.CartAdapter;
 import com.example.myapplication.entity.Goods;
 import com.example.myapplication.gouwuche.CgouwucheFragment;
@@ -30,7 +26,6 @@ import com.example.myapplication.gouwuche.ShangpingjmActivity;
 import com.example.myapplication.util.CartDBService;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -121,6 +116,7 @@ public class GouwucheFragment extends Fragment implements CartAdapter.JiPriceInt
                 cartAdapter.notifyDataSetChanged();
             }
         });
+        //实现结算
         jisuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -146,19 +142,27 @@ public class GouwucheFragment extends Fragment implements CartAdapter.JiPriceInt
                 }
             }
         });
+        myList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
-
-        //list跳转商品详情页
-        myList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // 第二步：通过Intent跳转至新的页面
+                Goods goods = items.get(position);
+                Bundle bundle = new Bundle();
+                bundle.putString("name", goods.getName());
+                bundle.putInt("num", goods.getNum());
+                bundle.putFloat("price",goods.getPrice());
+                bundle.putInt("img", goods.getImg());
+                bundle.putString("guige", goods.getGuige());
                 Intent intent = new Intent(getActivity(), ShangpingjmActivity.class);
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
+
         });
+
         return view;
     }
+
 
     @Override
     public void jiPrice(HashMap<Object, Integer> pitchOnMap) {

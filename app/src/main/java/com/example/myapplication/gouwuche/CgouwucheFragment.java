@@ -18,6 +18,7 @@ import com.example.myapplication.R;
 import com.example.myapplication.adapter.CartAdapter;
 import com.example.myapplication.entity.Goods;
 import com.example.myapplication.fragment.GouwucheFragment;
+import com.example.myapplication.fragment.ShouyeFragment;
 import com.example.myapplication.util.CartDBService;
 
 import java.util.ArrayList;
@@ -27,7 +28,6 @@ import java.util.List;
 import java.util.Map;
 
 public class CgouwucheFragment extends Fragment implements CartAdapter.JiPriceInterface{
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -102,6 +102,14 @@ public class CgouwucheFragment extends Fragment implements CartAdapter.JiPriceIn
                         int id1=items.get(i).getId();
                         cartDBService.deleteCart(id1);
                         Toast.makeText(getActivity(),"商品删除成功",Toast.LENGTH_SHORT).show();
+                        FragmentManager fragmentManager=getFragmentManager();
+                        //开启事务
+                        fragmentManager.beginTransaction()
+                                //替换frament
+                                .replace(R.id.gouwuche, new CgouwucheFragment())
+                                //提交事务
+                                .addToBackStack(null)
+                                .commit();
 
                     }
                 }

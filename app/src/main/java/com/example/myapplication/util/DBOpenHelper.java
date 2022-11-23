@@ -15,9 +15,13 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        //创建数据表
+        //创建购物车数据表
         sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS cart_db(_id integer primary key autoincrement," +
                 "name text,guige text,price float,num integer,img long)");
+        //创建立即购买数据表
+        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS liji_db(_id integer primary key autoincrement," +
+                "name text,guige text,price float,num integer,img long)");
+
 
     }
 
