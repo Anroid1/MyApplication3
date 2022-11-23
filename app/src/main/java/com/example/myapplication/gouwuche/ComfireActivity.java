@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.SimpleAdapter;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
+import com.example.myapplication.activity.MainActivity;
 import com.example.myapplication.adapter.CartAdapter;
 import com.example.myapplication.entity.Goods;
 
@@ -41,14 +43,28 @@ public class ComfireActivity extends AppCompatActivity {
             radio1=findViewById(R.id.radio1);
             radio2=findViewById(R.id.radio2);
             radio3=findViewById(R.id.radio3);
+            ImageView fuhao = findViewById(R.id.tv_fh);
             initView();
+
+        fuhao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(ComfireActivity.this, MainActivity.class);
+                intent1.putExtra("id",2);
+                startActivity(intent1);
+            }
+        });
 
 
             tv_comfire.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent=new Intent(ComfireActivity.this,JSchenggongActivity.class);
-                    startActivity(intent);
+                    if (radio1.isChecked() == false ||radio2.isChecked() == false||radio3.isChecked() == false){
+                        Toast.makeText(ComfireActivity.this, "请选择支付方式", Toast.LENGTH_SHORT).show();
+                    }else {
+                        Intent intent = new Intent(ComfireActivity.this, JSchenggongActivity.class);
+                        startActivity(intent);
+                    }
 
 
                 }

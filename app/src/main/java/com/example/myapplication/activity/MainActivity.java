@@ -1,9 +1,11 @@
 package com.example.myapplication.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -49,7 +51,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
-
+    @Override
+    protected void onResume() {
+        int id = getIntent().getIntExtra("id", 0);
+        if (id == 2) {
+            Fragment fragmen = new GouwucheFragment();
+            FragmentManager fmanger = getSupportFragmentManager();
+            FragmentTransaction transaction = fmanger.beginTransaction();
+            transaction.replace(R.id.frame_main, fragmen);
+            transaction.commit();
+            //帮助跳转到指定子fragment
+            Intent i=new Intent();
+            i.setClass(MainActivity.this,GouwucheFragment.class);
+            i.putExtra("id",2);
+        }
+        super.onResume();
+    }
     @Override
     public void onClick(View view) {
         //实例化碎片管理器

@@ -1,6 +1,8 @@
 package com.example.myapplication.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +15,7 @@ import android.widget.Toast;
 import com.example.myapplication.R;
 import com.example.myapplication.adapter.CartAdapter;
 import com.example.myapplication.entity.Goods;
+import com.example.myapplication.fragment.ShouyeFragment;
 import com.example.myapplication.gouwuche.ComfireActivity;
 import com.example.myapplication.gouwuche.LijigoumaiActivity;
 import com.example.myapplication.util.CartDBService;
@@ -56,6 +59,7 @@ public class ShangpinActivity extends AppCompatActivity {
         int i = intent.getIntExtra("gid", 0);
         //获取页面上的控件
         ImageView iv_info = findViewById(R.id.iv_info);
+        ImageView fuhao = findViewById(R.id.tv_fh);
         TextView tv_info = findViewById(R.id.tv_info);
         TextView tv_price = findViewById(R.id.tv_price);
         TextView tv_number = findViewById(R.id.tv_number);
@@ -81,6 +85,15 @@ public class ShangpinActivity extends AppCompatActivity {
         spI1.setImageResource(imgs1[i]);
         spI2.setImageResource(imgs2[i]);
         //加减控件实现
+
+        fuhao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(ShangpinActivity.this,MainActivity.class);
+                startActivity(intent1);
+
+            }
+        });
 
         reduce.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -9,11 +9,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
+import com.example.myapplication.activity.MainActivity;
+import com.example.myapplication.activity.ShangpinActivity;
 import com.example.myapplication.adapter.CartAdapter;
 import com.example.myapplication.entity.Goods;
 import com.example.myapplication.util.CartDBService;
@@ -37,11 +40,21 @@ public class LijigoumaiActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lijigoumai);
         list2 = findViewById(R.id.list2);
         tv_count=findViewById(R.id.tv_acount);
+        ImageView fuhao = findViewById(R.id.tv_fh);
         tv_comfire=findViewById(R.id.tv_comfire);
         radio1=findViewById(R.id.radio1);
         radio2=findViewById(R.id.radio2);
         radio3=findViewById(R.id.radio3);
         initView();
+
+        fuhao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(LijigoumaiActivity.this, ShangpinActivity.class);
+                startActivity(intent1);
+
+            }
+        });
         //查询数据库
         CartDBService cartDBService=new CartDBService(this);
         cartDBService.getLastCart();

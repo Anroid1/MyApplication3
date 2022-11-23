@@ -1,6 +1,8 @@
 package com.example.myapplication.gouwuche;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,11 +13,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
+import com.example.myapplication.activity.MainActivity;
 import com.example.myapplication.activity.ShangpinActivity;
 import com.example.myapplication.entity.Goods;
+import com.example.myapplication.fragment.ShouyeFragment;
 import com.example.myapplication.util.CartDBService;
 
 public class ShangpingjmActivity extends AppCompatActivity {
+    FragmentManager fragmentManager;
+    FragmentTransaction fragmentTransaction;
     private int amount = 1;
 
     @Override
@@ -27,6 +33,7 @@ public class ShangpingjmActivity extends AppCompatActivity {
         TextView tv_price = findViewById(R.id.tv_price);
         TextView tv_number = findViewById(R.id.tv_number);
         ImageView iv_info = findViewById(R.id.iv_info);
+        ImageView fuhao = findViewById(R.id.tv_fh);
         TextView tv_desc = findViewById(R.id.tv_desc);
         TextView spt6 = findViewById(R.id.spt6);
         TextView spt7 = findViewById(R.id.spt7);
@@ -58,6 +65,15 @@ public class ShangpingjmActivity extends AppCompatActivity {
         spI1.setImageResource(img1);
         spI2.setImageResource(img2);
         //加减控件实现
+
+        fuhao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(ShangpingjmActivity.this, MainActivity.class);
+                intent1.putExtra("id",2);
+                startActivity(intent1);
+            }
+        });
 
         reduce.setOnClickListener(new View.OnClickListener() {
             @Override
