@@ -11,9 +11,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
+import com.example.myapplication.activity.MainActivity;
 import com.example.myapplication.activity.ShangpinActivity;
 import com.example.myapplication.entity.Goods;
 import com.example.myapplication.util.CartDBService;
+import com.example.myapplication.wode.GerenxinxiActivity;
 
 public class ShangpingjmActivity extends AppCompatActivity {
     private int amount = 1;
@@ -31,6 +33,7 @@ public class ShangpingjmActivity extends AppCompatActivity {
         TextView spt6 = findViewById(R.id.spt6);
         TextView spt7 = findViewById(R.id.spt7);
         TextView spt8 = findViewById(R.id.spt8);
+        ImageView tv_fh=findViewById(R.id.tv_fh);
         ImageView spI1 = findViewById(R.id.spI1);
         ImageView spI2 = findViewById(R.id.spI2);
         TextView tv_addcart = findViewById(R.id.tv_addcart);
@@ -120,7 +123,13 @@ public class ShangpingjmActivity extends AppCompatActivity {
                 Intent intent1=new Intent(ShangpingjmActivity.this, LijigoumaiActivity.class);
                 startActivity(intent1);
 
-
+            }
+        });
+        tv_fh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ShangpingjmActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 
