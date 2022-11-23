@@ -27,9 +27,13 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 //创建立即购买数据表
         sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS liji_db(_id integer primary key autoincrement," +
                 "name text,guige text,price float,num integer,img long)");
-
+//订单表
+        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS order_db(_id integer primary key autoincrement," +
+                "oTime text,totalPrice float,onum integer)");
+        //订单详情
+        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS orderDetail_db(_id integer primary key autoincrement," +
+                "old integer,name text,img int,price float,num integer)");
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
 

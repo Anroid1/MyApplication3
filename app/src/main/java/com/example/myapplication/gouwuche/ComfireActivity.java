@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -24,7 +25,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-
 
 public class ComfireActivity extends AppCompatActivity {
     ListView list2;
@@ -49,14 +49,25 @@ public class ComfireActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent intent=new Intent(ComfireActivity.this,JSchenggongActivity.class);
                     startActivity(intent);
-
-
                 }
             });
 
-
+        //获取Intent数据，初始化页面
+        /*Intent intent = getIntent();
+        int id[] = intent.getIntArrayExtra("id");
+        //Log.e("getID",id.length+"");
+        ArrayList<Goods> goodsList = new ArrayList<Goods>();
+       // for (int i = 0; i < a; i++) {
+        int j=0;
+        do{
+            Goods goods = new Goods();
+            goods = (Goods) intent.getSerializableExtra(id[j] + "");
+            Log.e("goods",goods.getName());
+            goodsList.add(goods);
+            j++;
+        }while (id[j]!=0&&j<id.length-1);*/
             //获取Intent数据，初始化页面
-            Intent intent = getIntent();
+           Intent intent = getIntent();
             int a = intent.getIntExtra("id", 0);
             ArrayList<Goods> goodsList = new ArrayList<Goods>();
             for (int i = 0; i < a; i++) {

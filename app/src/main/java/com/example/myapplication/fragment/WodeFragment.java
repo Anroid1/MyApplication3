@@ -34,7 +34,7 @@ public class WodeFragment extends Fragment {
         //从视图中获得控件
         ImageView myTitle =view.findViewById(R.id.touxiang);
         TextView textView=view.findViewById(R.id.nicheng);
-        RelativeLayout rl2=view.findViewById(R.id.rl2);
+       // RelativeLayout rl2=view.findViewById(R.id.rl2);
         RelativeLayout li4=view.findViewById(R.id.l4);
         RelativeLayout li5=view.findViewById(R.id.l5);
         RelativeLayout li6=view.findViewById(R.id.l6);
@@ -46,13 +46,13 @@ public class WodeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        rl2.setOnClickListener(new View.OnClickListener() {
+       /* rl2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent1=new Intent(getActivity(), DingdanActivity.class);
                 startActivity(intent1);
             }
-        });
+        });*/
 
         li4.setOnClickListener(new View.OnClickListener() {
             @Override

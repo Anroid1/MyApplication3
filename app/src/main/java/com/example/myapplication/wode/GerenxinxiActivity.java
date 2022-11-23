@@ -84,7 +84,7 @@ public class GerenxinxiActivity extends AppCompatActivity {
                 UserAdd userAdd=new UserAdd(GerenxinxiActivity.this);
                 userAdd.update1(user);
                 Toast.makeText(GerenxinxiActivity.this,"个人信息修改成功",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(GerenxinxiActivity.this,MainActivity.class);
+                Intent intent=new Intent(GerenxinxiActivity.this,DengluActivity.class);
                 startActivity(intent);
 
             }

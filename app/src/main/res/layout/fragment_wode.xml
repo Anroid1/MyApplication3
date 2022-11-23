@@ -38,7 +38,7 @@
                 android:textColor="@color/white"
                 android:textSize="18dp" />
         </RelativeLayout>
-        <RelativeLayout
+       <!--<RelativeLayout
             android:id="@+id/rl2"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -79,13 +79,13 @@
             android:layout_height="1px"
             android:layout_marginTop="1px"
             android:layout_below="@+id/rl2"
-            android:background="#CECECE" />
+            android:background="#CECECE" />-->
 
         <RelativeLayout
             android:id="@+id/l4"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_below="@+id/v1"
+            android:layout_below="@+id/dzl1"
             android:orientation="horizontal">
 
             <ImageView
