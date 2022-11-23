@@ -5,49 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".wode.XiugaimimaActivity">
-    <LinearLayout
+
+    <RelativeLayout
+        android:id="@+id/dzl1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/xdl1"
-        android:orientation="horizontal">
+        android:layout_height="50dp"
+        android:background="@color/white">
+
         <ImageView
+            android:id="@+id/fanhui"
             android:layout_width="wrap_content"
             android:layout_height="15dp"
-            android:id="@+id/adI1"
-            android:src="@drawable/fanhui"
-            ></ImageView>
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/button2"></ImageView>
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/xdt1"
-            android:layout_weight="1"
+            android:id="@+id/dzt1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:text="修改地址"></TextView>
-    </LinearLayout>
+            android:textSize="18dp"
+            android:text="修改密码"
+            ></TextView>
+
+
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:id="@+id/xdl2"
-        android:layout_below="@id/xdl1"
-        android:layout_marginTop="30dp"
+        android:layout_below="@id/dzl1"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:id="@+id/xdt2"
             android:gravity="center"
+            android:textSize="16dp"
             android:layout_marginLeft="20dp"
             android:text="姓名">
         </TextView>
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/xdt3"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
-        </TextView>
-
+        </EditText>
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -70,17 +78,18 @@
             android:layout_height="40dp"
             android:id="@+id/xdt4"
             android:gravity="center"
+            android:textSize="16dp"
             android:layout_marginLeft="20dp"
             android:text="手机号码">
         </TextView>
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/xdt5"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
-        </TextView>
+        </EditText>
 
     </LinearLayout>
     <View
@@ -98,22 +107,23 @@
         android:id="@+id/xdl4"
         android:layout_below="@id/xdv2"
         android:orientation="horizontal">
+
         <TextView
+            android:id="@+id/xdt6"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:id="@+id/xdt6"
-            android:gravity="center"
             android:layout_marginLeft="20dp"
-            android:text="地区">
-        </TextView>
-        <TextView
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="地区"></TextView>
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/xdt7"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
-        </TextView>
+        </EditText>
 
     </LinearLayout>
     <View
@@ -136,17 +146,18 @@
             android:layout_height="40dp"
             android:id="@+id/xdt8"
             android:gravity="center"
+            android:textSize="16dp"
             android:layout_marginLeft="20dp"
             android:text="详细地址">
         </TextView>
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/xdt9"
             android:gravity="right"
             android:layout_marginRight="20dp"
             android:text="">
-        </TextView>
+        </EditText>
 
     </LinearLayout>
     <LinearLayout

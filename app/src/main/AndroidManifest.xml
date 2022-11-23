@@ -26,6 +26,9 @@
             android:name=".wode.AdddizhiActivity"
             android:exported="false" />
         <activity
+            android:name=".wode.DizhibjActivity"
+            android:exported="false" />
+        <activity
             android:name=".wode.XiugaimimaActivity"
             android:exported="false" />
         <activity
@@ -36,6 +39,9 @@
             android:exported="false" />
         <activity
             android:name=".wode.DaishouhuoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wode.XiugaiDizhiActivity"
             android:exported="false" />
         <activity
             android:name=".wode.DaifukuanActivity"
